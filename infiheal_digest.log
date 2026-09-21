@@ -1,0 +1,1265 @@
+2026-08-05 19:05:45,696 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-08-05 19:05:45,697 - INFO - Added job "Infiheal PM Daily Digest" to job store "default"
+2026-08-05 19:05:45,697 - INFO - Scheduler started
+2026-08-05 19:15:49,772 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-08-05 19:15:49,772 - INFO - Added job "Infiheal PM Daily Digest" to job store "default"
+2026-08-05 19:15:49,772 - INFO - Scheduler started
+2026-08-05 19:15:49,775 - INFO - ✅ Scheduler started! Job scheduled for 3:05 PM daily.
+2026-08-05 19:22:47,939 - INFO - ============================================================
+2026-08-05 19:22:47,939 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-05 19:22:47,939 - INFO - ============================================================
+2026-08-05 19:22:47,939 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-05 19:22:49,927 - ERROR - Error fetching email: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2026-08-05 19:22:50,260 - ERROR - ❌ No email data retrieved. Aborting.
+2026-08-05 19:26:08,707 - INFO - ============================================================
+2026-08-05 19:26:08,708 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-05 19:26:08,708 - INFO - ============================================================
+2026-08-05 19:26:08,708 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-05 19:26:10,491 - ERROR - Error fetching email: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2026-08-05 19:26:10,784 - ERROR - ❌ No email data retrieved. Aborting.
+2026-08-05 19:35:03,681 - INFO - ============================================================
+2026-08-05 19:35:03,681 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-05 19:35:03,682 - INFO - ============================================================
+2026-08-05 19:35:03,682 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-05 19:35:07,301 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-05 19:35:07,321 - INFO - 3. Updating Master Excel File for 2026-08-04...
+2026-08-05 19:35:07,937 - INFO - ✅ Master Sheet Updated
+2026-08-05 19:35:07,937 - INFO - 4. Analyzing metrics with Gemini...
+2026-08-05 19:35:07,938 - ERROR - ❌ Critical error in daily digest pipeline: name 'SYSTEM_PROMPT' is not defined
+Traceback (most recent call last):
+  File "C:\Users\bmani\Downloads\Infiheal-Agent\triage_agent.py", line 320, in run_daily_digest
+    triage_brief = generate_pm_triage_brief(date_str, payload_for_claude, SYSTEM_PROMPT, gemini_api_key)
+                                                                          ^^^^^^^^^^^^^
+NameError: name 'SYSTEM_PROMPT' is not defined
+2026-08-05 19:40:58,207 - INFO - ============================================================
+2026-08-05 19:40:58,208 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-05 19:40:58,208 - INFO - ============================================================
+2026-08-05 19:40:58,209 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-05 19:41:01,538 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-05 19:41:01,557 - INFO - 3. Updating Master Excel File for 2026-08-04...
+2026-08-05 19:41:01,902 - INFO - ✅ Master Sheet Updated
+2026-08-05 19:41:01,902 - INFO - 4. Analyzing metrics with Gemini...
+2026-08-05 19:41:02,649 - INFO - AFC is enabled with max remote calls: 10.
+2026-08-05 19:41:03,357 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent "HTTP/1.1 404 Not Found"
+2026-08-05 19:41:03,401 - ERROR - Gemini API Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-08-05 19:41:03,402 - INFO - 
+============================================================
+2026-08-05 19:41:03,402 - INFO - 📊 INFIHEAL PM DAILY DIGEST (2026-08-04)
+2026-08-05 19:41:03,402 - INFO - ============================================================
+2026-08-05 19:41:03,402 - INFO - ❌ Gemini API Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-08-05 19:41:03,402 - INFO - 5. Sending automated email notification...
+2026-08-05 19:41:09,220 - INFO - ✅ Email sent successfully for 2026-08-04
+2026-08-05 19:41:09,220 - INFO - ============================================================
+2026-08-05 19:41:09,220 - INFO - ✅ Daily digest pipeline completed successfully!
+2026-08-05 19:41:09,220 - INFO - ============================================================
+2026-08-05 19:44:08,584 - INFO - ============================================================
+2026-08-05 19:44:08,585 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-05 19:44:08,585 - INFO - ============================================================
+2026-08-05 19:44:08,585 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-05 19:44:12,605 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-05 19:44:12,625 - INFO - 3. Updating Master Excel File for 2026-08-04...
+2026-08-05 19:44:13,064 - ERROR - ❌ Critical error in daily digest pipeline: columns overlap but no suffix specified: MultiIndex([('2026-08-04',   'Starts'),
+            ('2026-08-04', 'Finishes'),
+            ('2026-08-04',   'CR (%)')],
+           )
+Traceback (most recent call last):
+  File "C:\Users\bmani\Downloads\Infiheal-Agent\triage_agent.py", line 319, in run_daily_digest
+    payload_for_claude = update_excel_master_sheets(date_str, general_metrics, test_metrics)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\Downloads\Infiheal-Agent\triage_agent.py", line 214, in update_excel_master_sheets
+    df_tests = df_tests.join(df_today_tests, how='outer')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\frame.py", line 12818, in join
+    return merge(
+           ^^^^^^
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\reshape\merge.py", line 399, in merge
+    return op.get_result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\reshape\merge.py", line 1143, in get_result
+    result = self._reindex_and_concat(join_index, left_indexer, right_indexer)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\reshape\merge.py", line 1094, in _reindex_and_concat
+    llabels, rlabels = _items_overlap_with_suffix(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\reshape\merge.py", line 3092, in _items_overlap_with_suffix
+    raise ValueError(f"columns overlap but no suffix specified: {to_rename}")
+ValueError: columns overlap but no suffix specified: MultiIndex([('2026-08-04',   'Starts'),
+            ('2026-08-04', 'Finishes'),
+            ('2026-08-04',   'CR (%)')],
+           )
+2026-08-05 19:44:36,946 - INFO - ============================================================
+2026-08-05 19:44:36,947 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-05 19:44:36,947 - INFO - ============================================================
+2026-08-05 19:44:36,947 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-05 19:44:40,551 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-05 19:44:40,581 - INFO - 3. Updating Master Excel File for 2026-08-04...
+2026-08-05 19:44:40,856 - INFO - ✅ Master Sheet Updated
+2026-08-05 19:44:40,856 - INFO - 4. Analyzing metrics with Gemini...
+2026-08-05 19:44:41,584 - INFO - AFC is enabled with max remote calls: 10.
+2026-08-05 19:44:55,802 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-05 19:44:55,852 - INFO - 
+============================================================
+2026-08-05 19:44:55,854 - INFO - 📊 INFIHEAL PM DAILY DIGEST (2026-08-04)
+2026-08-05 19:44:55,854 - INFO - ============================================================
+2026-08-05 19:44:55,854 - INFO - **Daily PM Digest: 2026-08-04**
+
+**Observation on Data Provided:**
+It has been noted that the "TODAY'S METRICS" for 2026-08-04 are identical to the "7-DAY AVERAGES." This is highly unusual for daily fluctuating user metrics and suggests a potential issue with the data pipeline or reporting mechanism. As such, most metrics appear "stable" by definition, but this stability might be an artifact of the data itself rather than actual user behavior.
+
+---
+
+**🔴 Critical Funnel Anomalies**
+
+*   **Data Inconsistency: Premium Test Popup Clicks Without Views:**
+    *   **Metric:** 'Users shown the Premium Test popup' (0) vs. "Users who clicked 'Pay Now' on the Premium Test popup" (17).
+    *   **Anomaly:** It is logically impossible for 17 users to click 'Pay Now' on a premium test popup if 0 users were shown the popup. This indicates a severe data integrity issue in how these events are tracked and reported. While the numbers are stable compared to the 7-day average, the underlying logic is broken.
+
+**🟡 Emerging Trends**
+
+*   *No emerging trends can be identified today due to the identical nature of daily and 7-day average metrics. This itself is an anomalous reporting pattern.*
+
+**🟢 Healthy / Stable Metrics**
+
+*   **Overall Stability (Relative to 7-Day Average):** All metrics, including sign-ups, log-ins, chat engagement, test starts, and completions, are identical to their 7-day averages. This implies a period of consistent performance *if the data is accurate*.
+    *   **Sign-up & Login Funnel:** 'Total Users who tried sign up' (74), 'Total Users who completed sign up - (Verified Only)' (40), 'Total users who tried log in / sign in' (38), and 'Total users who completed sign in' (24) are all stable.
+    *   **Chat Engagement:** 'Unique User Count' (53), 'New signed up unique user count who sent atleast 1 message' (9), 'Total Prod User Message Count' (117), 'Total messages sent' (781), and 'Avg chat spend on healo chat (in Minutes)' (34.93) remain consistent.
+    *   **Test Performance:** 'Users coming to test page via SEO/goggle search' (253), 'Total users who started test ( SEO + HEALO combined)' (162), and 'Total test completed' (85) are stable.
+    *   **Returning Users:** 'Number of returning users' (20) is stable.
+    *   **Therapist Bookings:** 'No of users who clicked Book a Therapist' (34) is stable.
+
+**🔍 Recommended Actions**
+
+1.  **Investigate Data Reporting Accuracy (Critical):**
+    *   **Action:** Immediately investigate why "TODAY'S METRICS" are identical to "7-DAY AVERAGES." This is highly improbable for real-world user behavior and suggests a data pipeline freeze, misconfiguration, or reporting error.
+    *   **GSC Diagnostic Rule:** This is not a GSC issue, but a fundamental data integrity issue. Check data ingestion logs, ETL processes, and dashboard refresh schedules.
+    *   **Hotjar Targeting:** Not applicable for data pipeline issues.
+
+2.  **Address Premium Test Popup Data Inconsistency (Critical):**
+    *   **Action:** Prioritize fixing the tracking for 'Users shown the Premium Test popup' and "Users who clicked 'Pay Now' on the Premium Test popup." These metrics are contradictory and render any analysis of the premium test funnel unreliable.
+    *   **Cross-metric Triangulation:** This inconsistency directly impacts the understanding of premium test conversion.
+    *   **Hotjar Targeting:** Once data is confirmed to be flowing correctly, if the issue persists, target users who *attempt* to click 'Pay Now' on premium tests.
+        *   `URL path contains /premium-test` AND `Event: click_pay_now_button`
+        *   Observe if the popup is actually displayed before the click event is fired.
+
+3.  **Monitor Healo Traffic Collapse (Re-emphasize from previous reports):**
+    *   **Action:** While not visible in today's stable (but potentially erroneous) data, the previous report flagged a critical 'Healo traffic collapse' (232/day → 35/day by Week 2, no recovery). This needs immediate and ongoing investigation as it's the root cause of many other negative shifts. If the current data is frozen, this collapse might still be ongoing but masked.
+    *   **GSC Diagnostic Rule:** Check 'Search Results' for average position and CTR for Healo-related keywords. Check 'Page Indexing' for any 5xx or 404 errors on core Healo pages.
+    *   **Hotjar Targeting:** `URL path contains /healo` (for web users) to observe user behavior on Healo pages if traffic is indeed low.
+2026-08-05 19:44:55,854 - INFO - 5. Sending automated email notification...
+2026-08-05 19:45:01,703 - INFO - ✅ Email sent successfully for 2026-08-04
+2026-08-05 19:45:01,703 - INFO - ============================================================
+2026-08-05 19:45:01,703 - INFO - ✅ Daily digest pipeline completed successfully!
+2026-08-05 19:45:01,703 - INFO - ============================================================
+2026-08-05 20:28:55,234 - INFO - ============================================================
+2026-08-05 20:28:55,235 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-05 20:28:55,235 - INFO - ============================================================
+2026-08-05 20:28:55,235 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-05 20:28:59,035 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-05 20:28:59,056 - INFO - 3. Updating Master Excel File for 2026-08-04...
+2026-08-05 20:28:59,568 - ERROR - ❌ Critical error in daily digest pipeline: columns overlap but no suffix specified: MultiIndex([('2026-08-04',   'Starts'),
+            ('2026-08-04', 'Finishes'),
+            ('2026-08-04',   'CR (%)')],
+           )
+Traceback (most recent call last):
+  File "C:\Users\bmani\Downloads\Infiheal-Agent\triage_agent.py", line 364, in run_daily_digest
+    payload_for_gemini = update_excel_master_sheets(date_str, general_metrics, test_metrics)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\Downloads\Infiheal-Agent\triage_agent.py", line 246, in update_excel_master_sheets
+    df_tests = df_tests.join(df_today_tests, how='outer')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\frame.py", line 12818, in join
+    return merge(
+           ^^^^^^
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\reshape\merge.py", line 399, in merge
+    return op.get_result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\reshape\merge.py", line 1143, in get_result
+    result = self._reindex_and_concat(join_index, left_indexer, right_indexer)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\reshape\merge.py", line 1094, in _reindex_and_concat
+    llabels, rlabels = _items_overlap_with_suffix(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\reshape\merge.py", line 3092, in _items_overlap_with_suffix
+    raise ValueError(f"columns overlap but no suffix specified: {to_rename}")
+ValueError: columns overlap but no suffix specified: MultiIndex([('2026-08-04',   'Starts'),
+            ('2026-08-04', 'Finishes'),
+            ('2026-08-04',   'CR (%)')],
+           )
+2026-08-05 20:29:24,224 - INFO - ============================================================
+2026-08-05 20:29:24,224 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-05 20:29:24,224 - INFO - ============================================================
+2026-08-05 20:29:24,224 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-05 20:29:27,874 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-05 20:29:27,893 - INFO - 3. Updating Master Excel File for 2026-08-04...
+2026-08-05 20:29:28,078 - INFO - ✅ Master Sheet Updated
+2026-08-05 20:29:28,078 - INFO - 4. Filtering data and analyzing metrics with Gemini...
+2026-08-05 20:29:28,789 - INFO - AFC is enabled with max remote calls: 10.
+2026-08-05 20:30:03,725 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-05 20:30:03,776 - INFO - 
+============================================================
+2026-08-05 20:30:03,776 - INFO - 📊 INFIHEAL PM DAILY DIGEST (2026-08-04)
+2026-08-05 20:30:03,777 - INFO - ============================================================
+2026-08-05 20:30:03,777 - INFO - **Urgent Data Integrity Alert:**
+
+The provided "TODAY'S METRICS" payload is identical to the "7-DAY AVERAGES." This is highly improbable for real-world user behavior data and strongly suggests a data pipeline issue where daily metrics are either not being updated or are defaulting to the 7-day average. Before any further analysis, this data integrity issue must be investigated and resolved.
+
+Assuming, for the purpose of this analysis, that the provided numbers represent the *current 7-day average performance* and are to be evaluated against the historical context from May/June 2026:
+
+---
+
+🔴 **Critical Funnel Anomalies & Causal Analysis**
+
+1.  **Premium Test Popup Discrepancy:**
+    *   **Root Metric:** "Users shown the Premium Test popup" (0) vs. "Users who clicked 'Pay Now' on the Premium Test popup" (17).
+    *   **Secondary Impact:** This is a direct contradiction. It indicates a critical tracking failure for the premium wall display event. Without accurate data on who *sees* the popup, we cannot calculate conversion rates or diagnose friction points within the premium funnel.
+    *   **Product Hypothesis:** The event tracking for the premium popup display is either misconfigured, broken, or the 'Pay Now' clicks are originating from a different flow not captured by the 'shown popup' metric. This prevents any meaningful analysis of premium feature adoption.
+
+2.  **Significant Post-Submission Drop-off:**
+    *   **Root Metric:** "Total users who clicked on Submit" (187) vs. "Total test completed" (85).
+    *   **Secondary Impact:** A staggering 54.5% of users who committed to submitting their test did not complete it. This is a severe bottleneck *after* the user has invested time and effort, indicating a critical point of friction or failure.
+    *   **Product Hypothesis:** This aligns with the "Google authentication failed" issue observed in July for Inkblot and Love tests, particularly for mobile users. The signup/login wall (encountered by 123 users out of 187 submit clicks, a 65.7% hit rate) is the primary point of friction here, especially if authentication methods are failing or the process is too cumbersome post-test.
+
+3.  **Persistent Signup/Login Wall Friction:**
+    *   **Root Metric:** "Total users who encounterd signup/login wall" (123) out of "Total users who clicked on Submit" (187).
+    *   **Secondary Impact:** The wall hit rate of 65.7% is consistent with the higher end of the 27-62% range observed in May/June, confirming it remains a significant barrier to test completion and user conversion. While 86 users were already logged in, 37 users (123-86) still faced the wall as new or logged-out users, contributing to the post-submit drop-off.
+    *   **Product Hypothesis:** The signup/login wall, while necessary for user identification and retention, continues to be a major point of abandonment. The friction is likely exacerbated by technical issues (like Google auth failures) or a perceived high effort for immediate results.
+
+🟡 **Emerging Behavioral Trends**
+
+1.  **Strong Healo Chat Engagement Recovery (Requires Validation):**
+    *   **Correlated Metrics:** "Unique Healo users" (49) and "Total Daily Signups (Calculated)" (71). "Total users who sent messages" (198).
+    *   **Trend:** If we consider "Unique Healo users" (49) as the active chat engagers from new signups (71), this suggests an engagement rate of ~69%. This is a dramatic positive reversal from June's concerning trend where "roughly 9 out of 10 signups never send a single message" (i.e., ~10% engage rate). However, the "Total users who sent messages" (198) is significantly higher than both signups and unique Healo users, creating ambiguity.
+    *   **Product Hypothesis:** If validated, the product's efforts (e.g., stronger first-message prompts or in-test nudges, as suggested in June) have significantly improved initial chat engagement. The discrepancy in "Total users who sent messages" needs clarification to confirm the true scale of this recovery.
+
+2.  **Improved SEO Landing-to-Start Rate:**
+    *   **Correlated Metrics:** "Users coming to test page via SEO/goggle search" (253) and "Start test action - via SEO traffic" (141).
+    *   **Trend:** The Landing-to-Start rate for SEO traffic is 141/253 = 55.7%. This is a notable improvement compared to May's overall "Landing→Start rate (39%)" and the 41% observed during the June 13 SEO spike.
+    *   **Product Hypothesis:** The test landing pages are more effectively converting SEO traffic into test starts, possibly due to better page content, clearer CTAs, or improved relevance for search queries.
+
+3.  **Consistent Homepage Underperformance:**
+    *   **Correlated Metrics:** "Unique Home users" (12) and "Avg time spent on Home (By screen Time ) (Minutes)" (0.61).
+    *   **Trend:** The homepage continues to show minimal engagement, with very few unique users and low average time spent.
+    *   **Product Hypothesis:** This confirms the earlier analysis that the homepage is not serving as a primary acquisition or retention channel for web users, likely due to direct entry points to tests. Its role for web users remains limited.
+
+🟢 **Core Funnel Baselines**
+
+*   **Signup Conversion (Tried -> Completed Verified):** The conversion rate from "Total Users who tried sign up" (74) to "Total Users who completed sign up - (Verified Only)" (40) is 54%. This appears stable, though direct historical comparison for this specific metric is unavailable.
+*   **Returning User Engagement:** The presence of "Number of returning users" (20) and a high count of "Users already logged in at the time of submission (Return users)" (86) indicates continued engagement from the existing user base, aligning with the positive trend observed in June.
+
+---
+
+🔍 **Recommended PM Investigation & Action Plan**
+
+1.  **Immediate Data Integrity Audit:**
+    *   **Action:** Investigate why "TODAY'S METRICS" are identical to "7-DAY AVERAGES." This is the highest priority.
+    *   **Hotjar Targeting:** N/A (backend data issue).
+
+2.  **Premium Test Popup Tracking Fix:**
+    *   **Action:** Work with engineering to debug and fix the tracking for "Users shown the Premium Test popup." Ensure that every instance where the premium wall is displayed is accurately logged.
+    *   **Hotjar Targeting:** Set up Hotjar event tracking on the premium popup display event (e.g., `event: 'premium_popup_shown'`) and on the 'Pay Now' button click (`event: 'premium_pay_now_clicked'`). Record sessions where the popup is shown but 'Pay Now' is not clicked.
+
+3.  **Deep Dive into Post-Submission Drop-off & Signup Wall Friction:**
+    *   **Action:** Re-investigate the "Google authentication failed" issue, especially for mobile users, and its impact on test completion. Analyze logs for specific error messages post-submit.
+    *   **Action:** Review the signup/login wall flow for new users. Can the process be streamlined? Are there alternative, less friction-heavy authentication methods?
+    *   **Hotjar Targeting:** Record sessions for users who click "Submit" on a test but do not reach the "Test Completed" page. Filter by `URL path: /test-results/*` (or similar completion URL) and `event: 'submit_test_button_click'`. Pay close attention to mobile users.
+
+4.  **Validate Chat Engagement Recovery:**
+    *   **Action:** Clarify the definition and tracking of "Total users who sent messages" vs. "Unique Healo users" to reconcile the discrepancy and accurately measure chat engagement.
+    *   **Action:** If the recovery is confirmed, analyze the specific product changes or nudges implemented that contributed to this positive shift.
+    *   **Hotjar Targeting:** Set up event tracking for `event: 'first_chat_message_sent'` and analyze user journeys leading to this event, especially for new signups.
+
+5.  **Homepage Strategy Review (Web):**
+    *   **Action:** Acknowledge the homepage's limited role for web acquisition. Focus resources on optimizing direct test entry points and improving the post-test experience to drive engagement with the Healo chat and other features.
+    *   **Hotjar Targeting:** N/A (strategic decision based on existing data).
+2026-08-05 20:30:03,779 - INFO - 5. Sending automated email notification...
+2026-08-05 20:30:09,730 - INFO - ✅ Email sent successfully for 2026-08-04
+2026-08-05 20:30:09,731 - INFO - ============================================================
+2026-08-05 20:30:09,731 - INFO - ✅ Daily digest pipeline completed successfully!
+2026-08-05 20:30:09,731 - INFO - ============================================================
+2026-08-05 20:37:24,545 - INFO - ============================================================
+2026-08-05 20:37:24,546 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-05 20:37:24,546 - INFO - ============================================================
+2026-08-05 20:37:24,546 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-05 20:37:28,665 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-05 20:37:28,683 - INFO - 3. Updating Master Excel File for 2026-08-04...
+2026-08-05 20:37:29,181 - INFO - ✅ Master Sheet Updated
+2026-08-05 20:37:29,181 - INFO - 4. Filtering data and analyzing metrics with Gemini...
+2026-08-05 20:37:29,947 - INFO - AFC is enabled with max remote calls: 10.
+2026-08-05 20:37:59,953 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-05 20:38:00,049 - INFO - 
+============================================================
+2026-08-05 20:38:00,050 - INFO - 📊 INFIHEAL PM DAILY DIGEST (2026-08-04)
+2026-08-05 20:38:00,050 - INFO - ============================================================
+2026-08-05 20:38:00,050 - INFO - 🔴 **Critical Funnel Anomalies & Causal Analysis**
+
+*   **Post-Submit Drop-off & Signup Conversion Friction:**
+    *   **Root:** A staggering 54.5% drop-off occurs between users clicking 'Submit' (187) and 'Total test completed' (85).
+    *   **Secondary:** Of the 123 users encountering the signup/login wall, only 54% (40 out of 74 who *tried* to sign up) successfully complete the signup process.
+    *   **Hypothesis:** The signup/login wall is a severe bottleneck, causing significant user abandonment post-commitment. This is likely exacerbated by technical issues (e.g., Google authentication failures previously flagged) or user fatigue after completing a test.
+*   **Contradictory Premium Test Metrics:**
+    *   **Root:** Zero users were recorded as 'shown the Premium Test popup'.
+    *   **Secondary:** Yet, 17 users 'clicked 'Pay Now' on the Premium Test popup'.
+    *   **Hypothesis:** This is a critical tracking error. The 'shown popup' event is either misfiring or entirely broken, rendering all premium test conversion data unreliable.
+*   **Healo Internal Traffic Stagnation:**
+    *   **Root:** Healo internal traffic (52 users/day) remains significantly below May's average (232/day), despite a slight recovery from June's low (35/day).
+    *   **Secondary:** This indicates the underlying issue causing the "Healo traffic collapse" has not been fully resolved, limiting internal product discovery and engagement for existing users.
+
+🟡 **Emerging Behavioral Trends**
+
+*   **High-Intent SEO Traffic with Improved Landing-to-Start:** SEO traffic (253 users/day) is stable at historical averages, and its conversion to 'Start test action' (141 users) yields a strong ~55.7% Landing-to-Start rate, significantly higher than May's 39-41%. This suggests better quality or more targeted organic acquisition.
+*   **Deep Engagement for a Subset of Chat Users:** While the overall chat engagement rate remains a concern (historically, 9/10 signups don't message), the `Avg chat spend` of 34.93 minutes for those who *do* engage is exceptionally high. The median of 2 messages per user suggests a few power users drive this deep engagement, while many others send a few messages and drop off.
+
+🟢 **Core Funnel Baselines**
+
+*   Overall test completion rate (from initial start) is healthy at ~52.5%, indicating the tests themselves are generally engaging once a user begins.
+*   The Homepage continues to show minimal engagement (12 unique users, 0.61 min avg time), confirming its role as a non-primary acquisition/retention channel for web users, as previously identified.
+
+🔍 **Recommended PM Investigation & Action Plan**
+
+*   **Immediate Action: Premium Test Tracking Audit.** Prioritize investigating the `Premium Test popup` tracking discrepancy. Verify event firing for 'shown popup' and 'clicked Pay Now' across all platforms. This data is crucial for monetization.
+*   **High Priority: Post-Submit Funnel Deep Dive.**
+    *   **Hotjar:** Set up recordings and heatmaps specifically for users who click 'Submit' but *do not* complete the test. Target the signup/login wall interaction points.
+    *   **Technical:** Review server logs and error reports for the signup/login flow, specifically looking for authentication failures (e.g., Google auth) or other technical blockers post-submission.
+    *   **Product:** Explore A/B tests for alternative signup/login wall experiences, potentially offering a "guest results" view with a clearer, lower-friction path to full signup.
+*   **Medium Priority: Healo Internal Traffic Root Cause Analysis.** Re-investigate the root cause of the Healo traffic collapse from June. What product changes, feature removals, or internal linking issues might be preventing a return to May's engagement levels?
+*   **Data Integrity:** Reconcile the definitions and reporting for `Total users who started test ( SEO + HEALO combined)` vs. `Total Test Started From All Sources` and `Unique User Count` vs. `Total users who sent messages` to ensure consistent and unambiguous metric interpretation.
+2026-08-05 20:38:00,050 - INFO - 5. Sending automated email notification...
+2026-08-05 20:38:06,930 - INFO - ✅ Email sent successfully for 2026-08-04
+2026-08-05 20:38:06,931 - INFO - ============================================================
+2026-08-05 20:38:06,931 - INFO - ✅ Daily digest pipeline completed successfully!
+2026-08-05 20:38:06,931 - INFO - ============================================================
+2026-08-05 20:43:49,041 - INFO - ============================================================
+2026-08-05 20:43:49,041 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-05 20:43:49,042 - INFO - ============================================================
+2026-08-05 20:43:49,042 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-05 20:43:52,552 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-05 20:43:52,572 - INFO - 3. Updating Master Excel File for 2026-08-04...
+2026-08-05 20:43:53,030 - INFO - ✅ Master Sheet Updated
+2026-08-05 20:43:53,030 - INFO - 4. Filtering data and analyzing metrics with Gemini...
+2026-08-05 20:43:53,768 - INFO - AFC is enabled with max remote calls: 10.
+2026-08-05 20:44:22,499 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-05 20:44:22,550 - INFO - 
+============================================================
+2026-08-05 20:44:22,550 - INFO - 📊 INFIHEAL PM DAILY DIGEST (2026-08-04)
+2026-08-05 20:44:22,550 - INFO - ============================================================
+2026-08-05 20:44:22,550 - INFO - Here's your PM Digest for 2026-08-04:
+
+🔴 **Critical Funnel Anomalies & Causal Analysis**
+
+*   **Premium Wall Breakdown:** `Users shown the Premium Test popup` is **0**, yet `Users who clicked 'Pay Now' on the Premium Test popup` is **17**. This is a severe tracking error or a fundamental product flow bypass, making premium conversion unmeasurable.
+*   **Test Completion Churn:** A massive **46.7% drop-off** occurs between `Total Test Started` (351) and `Total users who clicked on Submit` (187). This indicates significant friction *within* tests, likely due to length or uncomfortable questions, before users even reach the submission point.
+*   **Chat Engagement Metric Discrepancy:** `Avg chat spend on Healo chat` is **34.93 minutes**, but the `Avg number of messages sent per user (Median)` is only **2**. This suggests either a few outlier users are having extremely long, low-message conversations, or the "chat spend" metric is capturing passive time in the chat interface, not active engagement.
+*   **Missing Core Metric:** The `Total Users who tried sign up` metric is `{}`. This is a critical data integrity issue, preventing a full understanding of the top-of-funnel signup attempts.
+
+🟡 **Emerging Behavioral Trends**
+
+*   **Strong Returning User Engagement:** `Users already logged in at the time of submission` (86) significantly outnumber new sign-ups/log-ins (48 total). This indicates a healthy, active base of existing users completing tests, suggesting good retention for those already onboarded.
+*   **Potential Chat Engagement Recovery:** If `Unique User Count` (53) represents unique chat engagers from `Total Daily Signups` (71), this implies a strong 74.6% chat engagement rate for new users, a positive shift from previous reports of 9 out of 10 signups never messaging. This needs verification due to metric ambiguity.
+
+🟢 **Core Funnel Baselines**
+
+*   Overall daily traffic (SEO/Healo), test starts, sign-up attempts (based on calculated signups), and log-in attempts are stable against 7-day averages.
+
+🔍 **Recommended PM Investigation & Action Plan**
+
+1.  **IMMEDIATE: Premium Wall Tracking Audit:** Investigate why `Users shown the Premium Test popup` is 0 while clicks on 'Pay Now' are recorded. This is a critical monetization funnel break.
+    *   **Hotjar:** Set up Hotjar recordings/heatmaps specifically on the premium wall URL path or event to observe user behavior if the popup *is* actually showing but not tracking.
+2.  **Test Completion Deep Dive:**
+    *   **Hotjar:** Target recordings for users who `Start test action` but do not `click on Submit`. Focus on previously flagged tests like Allosexual, Asexual, Inkblot, and Love Test. Look for drop-off points within the test flow.
+    *   **Product Review:** Re-evaluate test length and question sensitivity for high drop-off tests.
+3.  **Chat Engagement Metric Clarification:** Work with data engineering to clarify the definitions of `Avg chat spend`, `Unique User Count`, and `Total users who sent messages`. Investigate outliers in chat duration vs. message count.
+4.  **Data Integrity Fix:** Address the missing `Total Users who tried sign up` metric in the daily payload.
+2026-08-05 20:44:22,550 - INFO - 5. Sending automated email notification...
+2026-08-05 20:44:29,475 - INFO - ✅ Email sent successfully for 2026-08-04
+2026-08-05 20:44:29,475 - INFO - ============================================================
+2026-08-05 20:44:29,476 - INFO - ✅ Daily digest pipeline completed successfully!
+2026-08-05 20:44:29,476 - INFO - ============================================================
+2026-08-05 20:56:39,087 - INFO - ============================================================
+2026-08-05 20:56:39,087 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-05 20:56:39,088 - INFO - ============================================================
+2026-08-05 20:56:39,088 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-05 20:56:42,760 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-05 20:56:42,777 - INFO - 3. Updating Master Excel File for 2026-08-04...
+2026-08-05 20:56:43,192 - INFO - ✅ Master Sheet Updated
+2026-08-05 20:56:43,192 - INFO - 4. Filtering data and analyzing metrics with Gemini...
+2026-08-05 20:56:43,908 - INFO - AFC is enabled with max remote calls: 10.
+2026-08-05 20:57:20,322 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-05 20:57:20,379 - INFO - 
+============================================================
+2026-08-05 20:57:20,379 - INFO - 📊 INFIHEAL PM DAILY DIGEST (2026-08-04)
+2026-08-05 20:57:20,379 - INFO - ============================================================
+2026-08-05 20:57:20,379 - INFO - 🔴 **Critical Funnel Anomalies & Causal Analysis**
+
+1.  **Catastrophic Test Completion Rate & Post-Submit Drop-off:**
+    *   **Root Metric:** `Total test completed` (85) vs. `Total Test Started From All Sources` (351) yields an abysmal 24.2% overall completion rate. This is significantly lower than even previously identified "broken" tests (e.g., Inkblot at 55%).
+    *   **Secondary Impact:** This severe drop-off directly impacts user satisfaction, new user signups, and subsequent Healo chat engagement.
+    *   **Product Hypothesis:** The primary friction point is *after* users click "Submit". With 187 users clicking submit but only 85 completing (a 54.5% drop-off), this strongly points to a technical issue at the final submission/signup wall stage, reminiscent of the "Google authentication failed" bug previously identified. The high signup wall hit rate (65.7% of submitters) exacerbates this, as users are forced into a potentially broken flow.
+
+2.  **Premium Test Popup Tracking Discrepancy:**
+    *   **Root Metric:** `Users shown the Premium Test popup` (0) vs. `Users who clicked 'Pay Now' on the Premium Test popup` (17).
+    *   **Secondary Impact:** We are completely blind to the actual conversion rate of the premium wall. If 17 users clicked 'Pay Now' without the popup being registered as "shown," our funnel metrics for premium tests are inaccurate, hindering optimization efforts.
+    *   **Product Hypothesis:** This is a critical tracking bug. The event for "popup shown" is either not firing or not being recorded correctly, while the "Pay Now" click event is.
+
+3.  **Severe Chat Metrics Inconsistencies:**
+    *   **Root Metric:** Multiple conflicting chat metrics: `Unique User Count` (53), `Total users who sent messages` (198), `Total conversations created` (759), `Total conversations counted` (152), `Total Convo ID's` (130).
+    *   **Secondary Impact:** We cannot accurately assess chat engagement, user retention via chat, or the effectiveness of the Healo chatbot. The core "Engage Rate" (signups sending messages) cannot be reliably calculated, making it impossible to track the previously flagged "9 out of 10 signups never send a single message" issue.
+    *   **Product Hypothesis:** There are fundamental data definition and/or tracking issues within the chat module. `Total users who sent messages` being higher than `Unique User Count` is a direct contradiction, suggesting mislabeling or incorrect aggregation. The vast difference between "conversations created" and "counted/IDs" also points to unclear definitions or broken tracking.
+
+🟡 **Emerging Behavioral Trends**
+
+1.  **Persistent High Signup Wall Encounter Rate:**
+    *   The `Total users who encounterd signup/login wall` (123) out of `Total users who clicked on Submit` (187) results in a 65.7% wall hit rate. This is consistent with the "more than doubled (27% → 62%)" anomaly flagged in June, indicating this friction point remains a significant barrier.
+
+🟢 **Core Funnel Baselines**
+
+1.  **Stable Acquisition Traffic:** `Users coming to test page via SEO/goggle search` (253) and `Users coming to test page via healo` (52) appear to be within a healthy range, especially compared to the June "Healo traffic collapse." The overall `Landing→Start rate` (53%) is also robust.
+2.  **Consistent Signup & Login Attempts:** `Total Users who tried sign up` (74) and `Total users who tried log in / sign in` (38) show a steady stream of users attempting to convert or re-engage.
+
+🔍 **Recommended PM Investigation & Action Plan**
+
+1.  **Immediate Deep Dive into Post-Submit Test Completion Failure:**
+    *   **Action:** Prioritize investigation into the 54.5% drop-off between `Total users who clicked on Submit` and `Total test completed`.
+    *   **Hotjar:** Set up recordings targeting users who click the "Submit" button on any test page but *do not* reach the "Test Completed" confirmation page. Look for error messages, infinite loading states, or unexpected redirects, especially on mobile.
+    *   **Dev Check:** Engage engineering to review server logs for submission errors (e.g., 5xx errors, database write failures) and specifically re-test the Google authentication flow on mobile devices.
+
+2.  **Rectify Premium Test Popup Tracking:**
+    *   **Action:** Fix the tracking for `Users shown the Premium Test popup`.
+    *   **Dev Check:** Work with engineering to ensure the "popup shown" event fires reliably *before* any "Pay Now" click event, and that both are correctly logged.
+
+3.  **Audit & Standardize Chat Metrics:**
+    *   **Action:** Conduct a full audit of all chat-related metrics.
+    *   **Data Definition:** Clearly define each metric (e.g., "unique users who sent at least one message," "total message events," "unique conversation IDs initiated," "unique conversation IDs with >X messages").
+    *   **Dev Check:** Verify tracking implementation against these new definitions to ensure accuracy and consistency.
+
+4.  **Re-evaluate Signup/Login Wall Friction:**
+    *   **Action:** Given the persistent 65.7% wall hit rate, re-assess the user experience at this critical juncture.
+    *   **Hotjar:** Review recordings of users encountering the signup/login wall after clicking "Submit". Look for hesitation, multiple attempts, or immediate drop-offs.
+2026-08-05 20:57:20,380 - INFO - 5. Sending automated email notification...
+2026-08-05 20:57:27,654 - INFO - ✅ Email sent successfully for 2026-08-04
+2026-08-05 20:57:27,656 - INFO - ============================================================
+2026-08-05 20:57:27,656 - INFO - ✅ Daily digest pipeline completed successfully!
+2026-08-05 20:57:27,656 - INFO - ============================================================
+2026-08-06 12:31:16,873 - INFO - ============================================================
+2026-08-06 12:31:16,875 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-06 12:31:16,876 - INFO - ============================================================
+2026-08-06 12:31:16,876 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-06 12:31:20,935 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-06 12:31:20,997 - INFO - 3. Updating Master Excel File for 2026-08-04...
+2026-08-06 12:31:22,379 - INFO - ✅ Master Sheet Updated
+2026-08-06 12:31:22,379 - INFO - 4. Filtering data and analyzing metrics with Gemini...
+2026-08-06 12:31:24,690 - INFO - AFC is enabled with max remote calls: 10.
+2026-08-06 12:31:26,944 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-08-06 12:31:26,947 - ERROR - Gemini API Error: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+2026-08-06 12:31:26,948 - INFO - 
+============================================================
+2026-08-06 12:31:26,948 - INFO - 📊 INFIHEAL PM DAILY DIGEST (2026-08-04)
+2026-08-06 12:31:26,949 - INFO - ============================================================
+2026-08-06 12:31:26,949 - INFO - ❌ Gemini API Error: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+2026-08-06 12:31:26,949 - INFO - 5. Sending automated email notification...
+2026-08-06 12:31:33,295 - INFO - ✅ Email sent successfully for 2026-08-04
+2026-08-06 12:31:33,296 - INFO - ============================================================
+2026-08-06 12:31:33,298 - INFO - ✅ Daily digest pipeline completed successfully!
+2026-08-06 12:31:33,298 - INFO - ============================================================
+2026-08-06 12:34:22,215 - INFO - ============================================================
+2026-08-06 12:34:22,217 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-06 12:34:22,217 - INFO - ============================================================
+2026-08-06 12:34:22,218 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-06 12:34:26,169 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-06 12:34:26,217 - INFO - 3. Updating Master Excel File for 2026-08-04...
+2026-08-06 12:34:27,279 - ERROR - ❌ Critical error in daily digest pipeline: DataFrame.groupby() got an unexpected keyword argument 'axis'
+Traceback (most recent call last):
+  File "C:\Users\bmani\Downloads\Infiheal-Agent\triage_agent.py", line 397, in run_daily_digest
+    payload_for_gemini = update_excel_master_sheets(date_str, general_metrics, test_metrics)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\Downloads\Infiheal-Agent\triage_agent.py", line 258, in update_excel_master_sheets
+    test_avg_df = df_last_7.groupby(level=1, axis=1).mean().round(1)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\util\_decorators.py", line 336, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: DataFrame.groupby() got an unexpected keyword argument 'axis'
+2026-08-06 12:34:43,133 - INFO - ============================================================
+2026-08-06 12:34:43,134 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-06 12:34:43,134 - INFO - ============================================================
+2026-08-06 12:34:43,135 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-06 12:34:47,277 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-06 12:34:47,335 - INFO - 3. Updating Master Excel File for 2026-08-04...
+2026-08-06 12:34:47,932 - INFO - ✅ Master Sheet Updated
+2026-08-06 12:34:47,932 - INFO - 4. Filtering data and analyzing metrics with Gemini...
+2026-08-06 12:34:49,726 - INFO - AFC is enabled with max remote calls: 10.
+2026-08-06 12:35:28,737 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-06 12:35:28,858 - INFO - 
+============================================================
+2026-08-06 12:35:28,858 - INFO - 📊 INFIHEAL PM DAILY DIGEST (2026-08-04)
+2026-08-06 12:35:28,859 - INFO - ============================================================
+2026-08-06 12:35:28,859 - INFO - **PM Digest: 2026-08-04 Metrics Snapshot**
+
+🔴 **Critical Funnel Anomalies & Causal Analysis**
+
+*   **Data Integrity Crisis:** Multiple core metrics are internally inconsistent or contradictory (e.g., 'Total Test Started' has three different values; 'Users shown Premium Test popup' is 0 while 17 clicked 'Pay Now'; 'Total users who clicked Submit' is less than the sum of those who hit the wall and those already logged in).
+    *   **Impact:** This fundamental breakdown in tracking and definition renders current reporting unreliable, making accurate diagnosis of funnel health and user behavior impossible.
+    *   **Hypothesis:** Deep-seated errors in event tracking implementation or metric definitions are skewing all reported numbers.
+
+*   **Post-Submit Drop-off:** A severe 54% drop-off occurs between 'Total users who clicked on Submit' (187) and 'Total test completed' (85).
+    *   **Impact:** Users are highly motivated to finish but face a significant barrier at the final step, leading to high abandonment.
+    *   **Hypothesis:** This friction is likely tied to the persistent signup/login wall, potential technical errors (e.g., Google auth failures on mobile), or an overly demanding post-submit flow.
+
+*   **Chat Engagement Metrics Disarray:** 'Unique User Count' (53) is vastly different from 'Total users who sent messages' (198), and 'Total conversations created' (759) is disproportionately high compared to 'Total conversations counted' (152).
+    *   **Impact:** We lack a clear understanding of actual chat engagement, making it impossible to measure the effectiveness of the AI Co-Therapist or identify areas for improvement.
+    *   **Hypothesis:** Metrics are either mislabeled, counting non-unique events, or capturing many uninitiated chat sessions, reinforcing the "9 out of 10 signups never send a message" insight.
+
+🟡 **Emerging Behavioral Trends**
+
+*   **Persistent Signup Wall Friction:** The wall hit rate (123/187 = 65.7%) remains high, continuing the upward trend from June (27% to 62%). This indicates a growing proportion of users are encountering the wall and likely abandoning.
+*   **Healthy SEO-to-Start Conversion:** SEO traffic converts well to test starts (141/253 = 55.7%), suggesting our organic acquisition is bringing in relevant, high-intent users to the test pages.
+
+🟢 **Core Funnel Baselines**
+
+*   Overall signup conversion (40/74 = 54%) is stable, albeit with internal inconsistencies in related metrics.
+*   Login completion (24/38 = 63%) is consistent.
+*   Users who engage in chat spend a significant average time (34.93 minutes), despite low median message counts, indicating deep engagement for a subset of users.
+
+🔍 **Recommended PM Investigation & Action Plan**
+
+1.  **Immediate Data Audit (P0):**
+    *   **Action:** Halt all metric-based product decisions until a full audit of analytics event definitions and tracking implementation is completed for *all* identified inconsistent metrics (e.g., Test Starts, Submit/Completion, Signup Wall, Premium Popup, Chat Engagement).
+    *   **Goal:** Standardize definitions, resolve overlaps, and ensure accurate, non-contradictory tracking across the entire funnel.
+
+2.  **Premium Test Popup Debug:**
+    *   **Action:** Investigate the direct contradiction of 0 'Users shown Premium Test popup' vs. 17 'Users who clicked Pay Now'. This is a critical revenue funnel tracking failure.
+    *   **Hotjar:** Set up recordings for users who click 'Pay Now' on premium tests to confirm popup visibility and identify any errors.
+
+3.  **Deep Dive: Post-Submit Drop-off:**
+    *   **Action:** Investigate the 54% drop-off between 'clicked submit' and 'test completed'.
+    *   **Hotjar:** Target recordings for users who click submit but do not complete the test. Look for signup/login wall interactions, error messages (especially on mobile), or unexpected redirects.
+    *   **Event Tracking:** Implement granular event tracking for 'signup wall shown', 'signup wall completed', and 'signup wall error' to pinpoint exact friction points.
+
+4.  **Chat Engagement Redefinition:**
+    *   **Action:** Work with data engineering to redefine and re-implement chat engagement metrics (unique users, conversations started, messages sent) to ensure clarity and consistency.
+    *   **Product Fix:** Revisit the first-message prompt or in-test nudges to Healo chat to improve the initial engagement rate, addressing the high 'conversations created' vs. 'messages sent' discrepancy.
+2026-08-06 12:35:28,861 - INFO - 5. Sending automated email notification...
+2026-08-06 12:35:41,473 - INFO - ✅ Email sent successfully for 2026-08-04
+2026-08-06 12:35:41,473 - INFO - ============================================================
+2026-08-06 12:35:41,473 - INFO - ✅ Daily digest pipeline completed successfully!
+2026-08-06 12:35:41,474 - INFO - ============================================================
+2026-08-06 12:58:53,949 - INFO - ============================================================
+2026-08-06 12:58:53,950 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-06 12:58:53,950 - INFO - ============================================================
+2026-08-06 12:58:53,950 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-06 12:58:58,983 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-06 12:58:59,028 - INFO - 3. Updating Master Excel File for 2026-08-04...
+2026-08-06 12:58:59,545 - INFO - ✅ Master Sheet Updated
+2026-08-06 12:58:59,546 - INFO - 4. Filtering data and analyzing metrics with Gemini...
+2026-08-06 12:59:00,469 - INFO - AFC is enabled with max remote calls: 10.
+2026-08-06 12:59:45,063 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-06 12:59:45,122 - INFO - 
+============================================================
+2026-08-06 12:59:45,122 - INFO - 📊 INFIHEAL PM DAILY DIGEST (2026-08-04)
+2026-08-06 12:59:45,122 - INFO - ============================================================
+2026-08-06 12:59:45,122 - INFO - **Urgent: Missing Today's Metrics - Analysis Based on Assumption**
+
+**Note to PM:** The `TODAY'S METRICS` payload was empty. For the purpose of providing an analysis, I have **assumed the dictionary labeled '7-DAY AVERAGES' represents TODAY'S METRICS.** Without a true historical baseline, this analysis focuses on internal consistency and cross-references with past insights, rather than deviation from a historical norm. A proper baseline is critical for future anomaly detection.
+
+---
+
+🔴 **Critical Funnel Anomalies & Causal Analysis**
+
+1.  **Premium Test Conversion Tracking Failure:**
+    *   **Root Metric:** `Users shown the Premium Test popup` (0) vs. `Users who clicked 'Pay Now' on the Premium Test popup` (17).
+    *   **Secondary Impact:** This is a severe data inconsistency. It's impossible for 17 users to click 'Pay Now' if zero were shown the popup. This indicates a critical tracking error, making premium conversion data unreliable.
+    *   **Product Hypothesis:** Either the 'shown' event is not firing, or the 'clicked' event is misattributed, potentially leading to an underestimation of premium wall friction or misdiagnosis of user intent.
+
+2.  **Massive Discrepancy in Chat User & Conversation Counts:**
+    *   **Root Metric:** `Unique User Count` (53) vs. `Total users who sent messages` (198). Also, `Total conversations created` (759) vs. `Total conversations counted` (152).
+    *   **Secondary Impact:** These metrics are fundamentally inconsistent. If only 53 unique users were active today, 198 cannot have sent messages. Similarly, a 5x difference between 'created' and 'counted' conversations points to severe tracking or definition issues.
+    *   **Product Hypothesis:** Definitions for "Unique User Count" and "Total users who sent messages" are likely mismatched, or there's a bug in how unique message senders are aggregated. The conversation count discrepancy suggests a similar problem, potentially with sessionization or filtering. This makes assessing chat engagement (a historically concerning trend per `User Analysis-Insights (1)`) impossible.
+
+3.  **Inconsistent Test Start Metrics:**
+    *   **Root Metric:** `Total users who started test ( SEO + HEALO combined)` (162) vs. `Total Test Started From All Sources` (351).
+    *   **Secondary Impact:** A difference of 189 test starts between these two metrics indicates a significant gap in understanding where users are initiating tests. This impacts our ability to accurately measure acquisition channel effectiveness and overall funnel entry.
+    *   **Product Hypothesis:** There are uncounted or miscategorized test start sources not captured by "SEO + HEALO combined," or `Total Test Started From All Sources` is double-counting or including non-user-initiated events.
+
+4.  **Persistent Signup/Login Wall Friction:**
+    *   **Root Metric:** `Total users who clicked on Submit` (187) but only `Total test completed` (85), with `Total users who encounterd signup/login wall` at 123.
+    *   **Secondary Impact:** A 45% completion rate post-submit, coupled with 123 users hitting the wall, confirms the long-standing friction identified in `User Analysis-Insights (1)`. Users are still dropping off significantly at the point of submission, likely due to the mandatory signup/login.
+    *   **Product Hypothesis:** Users prioritize immediate results over account creation, leading to high abandonment at the signup/login wall, especially after investing time in a test.
+
+---
+
+🟡 **Emerging Behavioral Trends**
+
+*   **Test-Centric Acquisition Dominance:** `Users coming to test page via SEO/goggle search` (253) and `Start test action - via SEO traffic` (141) remain the primary entry points and drivers of user activity. This reinforces the finding from `User Analysis-Insights (2)` that acquisition is heavily tied to self-tests, bypassing the homepage.
+*   **Low Homepage Engagement Confirmed:** `Unique Home users` (12) and `Avg time spent on Home` (0.61 minutes) are extremely low, consistent with `User Analysis-Insights (2)`'s verdict that the homepage is not a primary acquisition or retention channel for web users.
+
+---
+
+🟢 **Core Funnel Baselines**
+
+*   **Signup Conversion (Post-Attempt):** For users who explicitly *tried* to sign up (74), the verified completion rate (40) is 54%, which is reasonable in isolation, though the broader funnel shows significant wall friction.
+*   **Healo Engagement (Post-Login):** `Avg time spent on Healo` (39.51 minutes) for `Unique Healo users` (49) suggests that once users are logged in and engaging with the core Healo experience, they are spending a substantial amount of time on the platform.
+
+---
+
+🔍 **Recommended PM Investigation & Action Plan**
+
+1.  **Immediate Data Integrity Audit (P0):**
+    *   **Action:** Prioritize an urgent audit of all identified inconsistent metrics: Premium Test popup events, Chat User/Conversation counts, and Test Start metrics.
+    *   **Diagnostic:** Work with engineering to review tracking implementation (event definitions, firing conditions, aggregation logic).
+    *   **Hotjar:** Set up event tracking for `premium_popup_shown`, `premium_popup_pay_now_click`, `chat_message_sent`, `conversation_created`, `conversation_counted`, and `test_started_from_source` to validate data in real-time.
+
+2.  **Address Signup/Login Wall Friction (P1):**
+    *   **Action:** Initiate A/B tests for solutions to reduce friction at the test submission wall.
+    *   **Diagnostic:** Explore options like a "guest mode" to view results, a simplified one-click signup, or a clear value proposition for signing up *before* the wall.
+    *   **Hotjar:** Review recordings of users who `clicked_submit` but did not `complete_test` (filter by `URL path contains /test-results` and `event: signup_wall_shown`) to pinpoint exact drop-off moments and user behavior.
+
+3.  **Re-evaluate Test Completion Funnel (P2):**
+    *   **Action:** Investigate the low overall test completion rate (24.2% from `Total Test Started From All Sources`).
+    *   **Diagnostic:** Analyze specific test completion rates (if data becomes available) to identify problematic tests (e.g., Allosexual/Asexual as per `User Analysis-Insights (1)`). Review test length, question sensitivity, and potential technical issues.
+
+4.  **Establish Robust Baseline Reporting (P0):**
+    *   **Action:** Implement a reliable, structured daily metric reporting system with clear definitions for all metrics and a consistent historical baseline. The current `Daily Analytics.docx` is unusable for this purpose.
+    *   **Diagnostic:** Define a single source of truth for all metrics and ensure automated, accurate data capture and aggregation.
+2026-08-06 12:59:45,123 - INFO - 5. Sending automated email notification...
+2026-08-06 12:59:55,182 - INFO - ✅ Email sent successfully for 2026-08-04
+2026-08-06 12:59:55,182 - INFO - ============================================================
+2026-08-06 12:59:55,182 - INFO - ✅ Daily digest pipeline completed successfully!
+2026-08-06 12:59:55,183 - INFO - ============================================================
+2026-08-06 13:10:58,982 - INFO - ============================================================
+2026-08-06 13:10:58,983 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-06 13:10:58,983 - INFO - ============================================================
+2026-08-06 13:10:58,983 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-06 13:11:02,711 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-06 13:11:02,752 - INFO - 3. Updating Master Excel File for 2026-08-04...
+2026-08-06 13:11:03,028 - INFO - ✅ Master Sheet Updated
+2026-08-06 13:11:03,029 - INFO - 4. Filtering data and analyzing metrics with Gemini...
+2026-08-06 13:11:03,737 - INFO - AFC is enabled with max remote calls: 10.
+2026-08-06 13:11:29,567 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-06 13:11:29,587 - INFO - 
+============================================================
+2026-08-06 13:11:29,587 - INFO - 📊 INFIHEAL PM DAILY DIGEST (2026-08-04)
+2026-08-06 13:11:29,587 - INFO - ============================================================
+2026-08-06 13:11:29,587 - INFO - **🔴 Critical Funnel Anomalies & Causal Analysis**
+
+*   **Data Blackout for August 4th:** The most critical anomaly is the complete absence of daily metrics for 2026-08-04. This prevents any real-time performance analysis, anomaly detection, or comparison against historical baselines. Without this data, we are operating blind.
+*   **Premium Test Funnel Discrepancy (Baseline Anomaly):** The 7-day averages show **0 users shown the Premium Test popup** while simultaneously reporting **17 users clicked 'Pay Now' on the Premium Test popup**. This is a severe data integrity issue, indicating either the popup tracking is broken, or users are bypassing the intended premium flow. This directly impacts monetization and understanding user intent for premium features.
+*   **Chat Engagement Metric Inconsistency (Baseline Anomaly):** The baseline reports **53 Unique User Count** but **198 Total users who sent messages**. This significant discrepancy suggests either a fundamental misunderstanding of the 'Total users who sent messages' metric (e.g., counting events instead of unique users) or a tracking error, making it difficult to accurately assess chat engagement and retention.
+
+**🟡 Emerging Behavioral Trends**
+
+*   **Baseline Test Engagement:** Based on the 7-day averages, the platform maintains a healthy volume of test starts (351 total), with SEO traffic being a primary driver (253 users to test page via SEO). However, the overall completion rate (85 completed out of 351 started, ~24%) remains low, consistent with historical observations of friction points like the signup/login wall (123 users encountered it).
+*   **Persistent Homepage Underperformance:** The low average 'Unique Home users' (12) and 'Total time spent on Home' (7.35 minutes) in the baseline reinforce the previous analysis that the homepage is not effectively serving as a primary acquisition or retention channel for web users.
+
+**🟢 Core Funnel Baselines**
+
+*   Despite the data integrity issues, the 7-day averages indicate a consistent baseline of user acquisition attempts (74 total sign-up attempts, 40 verified completions) and login activity (38 attempts, 24 completions). Chat activity shows a median of 2 messages per user, with some highly engaged users driving long chat durations.
+
+**🔍 Recommended PM Investigation & Action Plan**
+
+1.  **IMMEDIATE: Investigate Data Pipeline Failure (Aug 4th):**
+    *   **Action:** Alert engineering/data team immediately. Determine the root cause of the missing daily metrics for 2026-08-04. Confirm data ingestion, processing, and reporting pipelines are operational.
+    *   **Hotjar:** Not applicable.
+2.  **HIGH PRIORITY: Diagnose Premium Test Funnel Tracking:**
+    *   **Action:** Work with analytics/engineering to audit the tracking for 'Users shown the Premium Test popup' and 'Users who clicked 'Pay Now' on the Premium Test popup'. Clarify if the 'Pay Now' clicks are happening via an un-tracked popup or an alternative path.
+    *   **Hotjar:** Set up recordings for users interacting with any premium test prompts or 'Pay Now' buttons. Target URL paths `/test/*/premium` or events `click_pay_now_button`.
+3.  **HIGH PRIORITY: Clarify Chat Engagement Metrics:**
+    *   **Action:** Define 'Unique User Count' and 'Total users who sent messages' precisely. If 'Total users who sent messages' is intended to be unique users, investigate the discrepancy and correct the tracking or calculation.
+    *   **Hotjar:** Not applicable.
+4.  **CONTINUOUS: Address Test Completion Friction:**
+    *   **Action:** Continue to monitor the test completion rate, especially for high-volume tests. Revisit previous recommendations regarding test length, question sensitivity, and the impact of the signup/login wall.
+    *   **Hotjar:** Continue recordings for users dropping off during tests or at the submission wall. Target URL paths `/test/*` and events `test_question_skip`, `submit_button_click`, `signup_wall_view`.
+2026-08-06 13:11:29,588 - INFO - 5. Sending automated email notification...
+2026-08-06 13:11:37,245 - INFO - ✅ Email sent successfully for 2026-08-04
+2026-08-06 13:11:37,245 - INFO - ============================================================
+2026-08-06 13:11:37,245 - INFO - ✅ Daily digest pipeline completed successfully!
+2026-08-06 13:11:37,245 - INFO - ============================================================
+2026-08-06 13:21:06,370 - INFO - ============================================================
+2026-08-06 13:21:06,370 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-06 13:21:06,370 - INFO - ============================================================
+2026-08-06 13:21:06,371 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-06 13:21:10,242 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-06 13:21:10,290 - INFO - 3. Updating Master Excel File for 2026-08-04...
+2026-08-06 13:21:10,711 - INFO - ✅ Master Sheet Updated
+2026-08-06 13:21:10,711 - INFO - 4. Filtering data and analyzing metrics with Gemini...
+2026-08-06 13:21:11,475 - INFO - AFC is enabled with max remote calls: 10.
+2026-08-06 13:21:41,097 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-06 13:21:41,118 - INFO - 
+============================================================
+2026-08-06 13:21:41,118 - INFO - 📊 INFIHEAL PM DAILY DIGEST (2026-08-04)
+2026-08-06 13:21:41,118 - INFO - ============================================================
+2026-08-06 13:21:41,118 - INFO - **PM Digest: 2026-08-04 Daily Metrics Snapshot**
+
+**Note:** Today's specific daily metrics payload was empty. This analysis is based on the provided 7-day averages, interpreted as the most recent available data snapshot, and cross-referenced with historical context.
+
+---
+
+🔴 **Critical Funnel Anomalies & Causal Analysis**
+
+*   **Missing Daily Metrics Payload:** The primary anomaly is the absence of specific daily data for 2026-08-04. This prevents direct day-over-day or day-vs-7-day average comparison, hindering real-time anomaly detection.
+    *   **Hypothesis:** Data pipeline failure or reporting issue.
+    *   **Impact:** Zero visibility into today's performance, potential for undetected critical issues.
+
+*   **Alarmingly Low Test Completion Rate (24.2%) & Post-Submit Friction:** Out of 351 test attempts, only 85 were completed. A significant 187 users clicked 'Submit', but 123 (65.7%) then encountered the signup/login wall. This indicates severe friction *after* users invest time in a test.
+    *   **Hypothesis:** The signup/login wall is a major bottleneck, causing users to abandon tests even after reaching the point of submission. This aligns with the June report's observation of a high wall hit rate (62%) and users wanting immediate results without extra effort.
+    *   **Impact:** Wasted user effort, high drop-off, and lost conversion opportunities for signups.
+
+*   **Premium Test Popup Tracking Discrepancy:** 0 users were recorded as being *shown* the Premium Test popup, yet 17 users *clicked 'Pay Now'*.
+    *   **Hypothesis:** Critical tracking error. Either the popup is being shown but not tracked, or users are finding a bypass to the 'Pay Now' action without seeing the popup.
+    *   **Impact:** Inaccurate monetization funnel data, inability to optimize premium test conversions.
+
+---
+
+🟡 **Emerging Behavioral Trends**
+
+*   **Significant Chat Engagement Improvement (Post-Signup):** With 71 calculated daily signups and 53 unique users engaging with chat, approximately 74.6% of new signups are sending messages. This is a dramatic positive shift from the June report's "9 out of 10 signups never send a single message" (10% engagement).
+    *   **Hypothesis:** Recent product changes or nudges (e.g., stronger first-message prompts, in-test nudges) are effectively driving new users to engage with the Healo chat.
+    *   **Impact:** Stronger initial product adoption and potential for improved retention.
+
+*   **Volatile SEO Traffic Recovery:** Users coming to the test page via SEO/Google search average 253. This represents a recovery from the June traffic collapse (35/day) and late July zeros, but remains highly volatile compared to earlier July peaks (e.g., 532).
+    *   **Hypothesis:** SEO efforts are yielding results, but the traffic source is inconsistent, possibly due to fluctuating keyword rankings or SERP feature changes.
+    *   **Impact:** Unpredictable user acquisition volume, making forecasting difficult.
+
+*   **Sustained Homepage Low Engagement:** Average time spent on Home is 0.61 minutes by only 12 unique users. This reinforces the previous analysis that the homepage is not a primary acquisition or retention channel for web users, whose entry points are tied to self-tests.
+
+---
+
+🟢 **Core Funnel Baselines**
+
+*   **Healthy Return User Engagement:** 86 users were already logged in at the time of submission, and 20 are counted as returning users. This aligns with the positive trend of growing return users observed in June.
+*   **Robust Chat Duration:** The average chat spend on Healo chat is 34.93 minutes, indicating meaningful engagement for those who do interact.
+
+---
+
+🔍 **Recommended PM Investigation & Action Plan**
+
+1.  **Urgent: Investigate Missing Daily Metrics:**
+    *   **Action:** Immediately check data pipelines, ETL processes, and reporting dashboards for 2026-08-04.
+    *   **Hotjar:** N/A
+
+2.  **Deep Dive: Test Completion & Signup Wall Friction:**
+    *   **Action:** Analyze the full funnel from 'Test Started' to 'Test Completed', focusing on the drop-off between 'Clicked Submit' and 'Completed Signup/Login'. Review recent changes to the signup/login wall flow.
+    *   **Hotjar:** Set up recordings for users who start a test and reach the `/submit` event but do not complete signup. Target URL path: `/test/*/submit` (or relevant submit endpoint). Look for rage clicks, hesitation, or error messages at the signup/login wall.
+
+3.  **Critical: Premium Test Popup Tracking Audit:**
+    *   **Action:** Work with engineering to audit the tracking events for the Premium Test popup. Verify if the 'popup shown' event is firing correctly and if 'Pay Now' clicks are being attributed accurately.
+    *   **Hotjar:** Set up event tracking for the 'Premium Test popup shown' and 'Pay Now clicked' events to cross-reference with backend data.
+
+4.  **Clarify Chat Engagement Metrics:**
+    *   **Action:** Confirm the exact definitions of "Unique User Count" (53) and "Total users who sent messages" (198) to ensure accurate interpretation of the positive chat engagement trend.
+    *   **Hotjar:** N/A
+
+5.  **Monitor SEO Traffic Stability:**
+    *   **Action:** Check Google Search Console for recent changes in average position, CTR, and indexing status for top-performing test pages. Investigate any recent algorithm updates or manual actions.
+    *   **Hotjar:** N/A
+2026-08-06 13:21:41,120 - INFO - 5. Sending automated email notification...
+2026-08-06 13:21:51,808 - INFO - ✅ Email sent successfully for 2026-08-04
+2026-08-06 13:21:51,809 - INFO - ============================================================
+2026-08-06 13:21:51,809 - INFO - ✅ Daily digest pipeline completed successfully!
+2026-08-06 13:21:51,809 - INFO - ============================================================
+2026-08-06 13:32:00,864 - INFO - ============================================================
+2026-08-06 13:32:00,865 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-06 13:32:00,865 - INFO - ============================================================
+2026-08-06 13:32:00,865 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-06 13:32:05,170 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-06 13:32:05,212 - INFO - 3. Updating Master Excel File for 2026-08-04...
+2026-08-06 13:32:05,721 - INFO - ✅ Master Sheet Updated
+2026-08-06 13:32:05,721 - INFO - 4. Filtering data and analyzing metrics with Gemini...
+2026-08-06 13:32:06,633 - INFO - AFC is enabled with max remote calls: 10.
+2026-08-06 13:32:40,547 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-06 13:32:40,660 - INFO - 
+============================================================
+2026-08-06 13:32:40,660 - INFO - 📊 INFIHEAL PM DAILY DIGEST (2026-08-04)
+2026-08-06 13:32:40,660 - INFO - ============================================================
+2026-08-06 13:32:40,660 - INFO - **PM Digest: 2026-08-04 Performance Snapshot**
+
+🔴 **Critical Funnel Anomalies & Causal Analysis**
+
+*   **Data Ingestion Failure (Primary Anomaly):** The most critical issue is the complete absence of `TODAY'S METRICS` for 2026-08-04. This indicates a severe data pipeline or logging failure, leaving us blind to today's performance.
+    *   **Impact:** Zero real-time visibility, immediate inability to detect new issues or validate recent fixes.
+    *   **Hypothesis:** A backend service responsible for metric aggregation or the daily data API endpoint is down or misconfigured.
+
+*   **Persistent Post-Test Signup Wall Friction:** The 7-day average shows `Total users who clicked on Submit` (187) but only `Total Users who completed sign up - (Verified Only)` (40), a mere ~21% conversion. This confirms the ongoing friction identified in June ("Users want the result immediately. Not ready to put more effort after a decently long test").
+    *   **Impact:** Significant loss of potential verified users, hindering retention and future engagement.
+    *   **Hypothesis:** The signup/login wall, encountered after test completion, remains a major barrier. The "Google authentication failed" issue (July 5th) might still be contributing, especially for mobile users.
+
+*   **Chat Engagement Metric Inconsistency:** The 7-day average reports `Unique User Count` (53) but `Total users who sent messages` (198). These metrics are contradictory; 198 unique users cannot send messages if the total unique user count is 53.
+    *   **Impact:** Misleading chat engagement data, preventing accurate assessment of user interaction with the core AI co-therapist feature.
+    *   **Hypothesis:** Ambiguous metric definitions or a data collection error for either `Unique User Count` or `Total users who sent messages`.
+
+🟡 **Emerging Behavioral Trends**
+
+*   **Sustained SEO-Driven Test Discovery:** `Users coming to test page via SEO/goggle search` (253, 7-day average) remains the dominant acquisition channel for tests, significantly outweighing `Users coming to test page via healo` (52). This reinforces the pattern of users directly accessing tests via search.
+    *   **Trend:** Continued strong reliance on SEO for initial test discovery, but the post-test conversion to verified users remains the bottleneck.
+
+*   **Homepage Ineffectiveness Confirmed:** The 7-day averages for `Unique Home users` (12) and `Avg time spent on Home` (0.61 minutes) are extremely low. This consistently validates the previous finding that the homepage is not functioning as a primary acquisition or retention channel for web users.
+    *   **Trend:** Web users continue to bypass the homepage, suggesting direct entry to tests or other content.
+
+🟢 **Core Funnel Baselines**
+
+*   **Robust Test Start Volume:** `Total Test Started From All Sources` (351, 7-day average) indicates healthy user interest and engagement with the test platform. This volume is strong compared to June's traffic collapse.
+*   **Consistent Login/Signup Attempts:** The volume of users attempting to sign up (74) and log in (38) is stable, indicating a consistent base of users trying to access or verify their accounts.
+*   **High Chat Interaction for Engaged Users:** `Total messages sent` (781) and `Total conversations created` (759) with an `Avg chat spend` of 34.93 minutes suggest that users who *do* engage with the chat feature do so actively and for meaningful durations.
+
+🔍 **Recommended PM Investigation & Action Plan**
+
+1.  **IMMEDIATE: Investigate Data Ingestion Failure:**
+    *   **Action:** Alert engineering/data team. Investigate logs for 2026-08-04 for any errors related to metric collection, aggregation, or API endpoints. Verify data pipeline health.
+
+2.  **Deep Dive into Post-Test Signup Friction:**
+    *   **Action:** Analyze the conversion rate from `Total users who clicked on Submit` to `Total Users who completed sign up - (Verified Only)`. Re-investigate "Google authentication failed" errors in logs, especially for mobile.
+    *   **Hotjar:** Set up recordings targeting users who `clicked on Submit` but *did not* `complete sign up`. Filter by mobile devices. Look for specific friction points, error messages, or abandonment patterns on the signup/login wall.
+
+3.  **Clarify & Correct Chat Engagement Metrics:**
+    *   **Action:** Work with data engineering to immediately clarify the definitions and ensure accurate reporting for `Unique User Count` and `Total users who sent messages`. This discrepancy needs urgent resolution for reliable analysis.
+
+4.  **Optimize Post-Test Experience for SEO Traffic:**
+    *   **Action:** Given high SEO traffic to tests, explore allowing users to see a summary of test results without immediate signup, with a clear prompt to sign up for full insights/history. Consider a shorter, less intrusive signup flow.
+    *   **Hotjar:** Set up funnels from `Start test action - via SEO traffic` to `Total test completed` to `Total users who clicked on Submit` to `Total Users who completed sign up` to identify precise drop-off points.
+
+5.  **Re-evaluate Web Homepage Strategy:**
+    *   **Action:** Given consistent low engagement, consider deprioritizing the web homepage as a primary acquisition/retention channel. Focus resources on optimizing test pages and direct chat entry points. For the app, explore push notifications and in-app prompts to drive homepage engagement.
+2026-08-06 13:32:40,662 - INFO - 5. Sending automated email notification...
+2026-08-06 13:32:47,244 - INFO - ✅ Email sent successfully for 2026-08-04
+2026-08-06 13:32:47,244 - INFO - ============================================================
+2026-08-06 13:32:47,244 - INFO - ✅ Daily digest pipeline completed successfully!
+2026-08-06 13:32:47,245 - INFO - ============================================================
+2026-08-06 14:07:33,802 - INFO - ============================================================
+2026-08-06 14:07:33,803 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-06 14:07:33,803 - INFO - ============================================================
+2026-08-06 14:07:33,803 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-06 14:07:37,054 - INFO - IMAP search matched UIDs: b'25970 25971 25997 25998 26025 26026 26045 26046 26066 26067 26068 26085 26086 26110 26111 26129 26130 26152 26153 26173 26174 26201 26202 26203 26221 26222 26241 26242 26261 26262 26287 26288 26515 26516 26551 26552 26570 26571 26583 26584 26585 26595 26596 26602 26624 26625 26646 26647 26648 26665 26666 26694 26695 26716 26717 26737 26738 26751 26752 26775 26776 26777 26791 26792 26801 26802 26820 26821 26839 26840 26853 26854 26873 26874 26895 26896 26912 26913 26937 26938 26955 26956 26996 27012 27013 27030 27031 27046 27047 27065 27066 27076 27077 27088 27089 27100 27101 27124 27125 27139 27140'
+2026-08-06 14:07:37,703 - INFO - Fetched email subject/date snippet: 
+    <div style="font-family: Arial, sans-serif; max-width: 900px; margin: auto;">
+      
+      <h2 style="color:#2c3e50;">
+        📊 Daily Analysis Summary (2026-08-04 - 2026-08-05)
+      </h2>
+
+      <h3 style="margin-top:20px;">User & Chat Analytics</h3>
+      
+    <table style="border-c
+2026-08-06 14:07:38,117 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-06 14:07:38,163 - WARNING - ⚠️ Fetched email date '2026-08-04' does not match expected date '2026-08-05' — likely a stale/old email from IMAP search. Skipping this run.
+2026-08-06 14:12:16,835 - INFO - ============================================================
+2026-08-06 14:12:16,835 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-06 14:12:16,835 - INFO - ============================================================
+2026-08-06 14:12:16,835 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-06 14:12:20,151 - INFO - IMAP search matched UIDs: b'25970 25971 25997 25998 26025 26026 26045 26046 26066 26067 26068 26085 26086 26110 26111 26129 26130 26152 26153 26173 26174 26201 26202 26203 26221 26222 26241 26242 26261 26262 26287 26288 26515 26516 26551 26552 26570 26571 26583 26584 26585 26595 26596 26602 26624 26625 26646 26647 26648 26665 26666 26694 26695 26716 26717 26737 26738 26751 26752 26775 26776 26777 26791 26792 26801 26802 26820 26821 26839 26840 26853 26854 26873 26874 26895 26896 26912 26913 26937 26938 26955 26956 26996 27012 27013 27030 27031 27046 27047 27065 27066 27076 27077 27088 27089 27100 27101 27124 27125 27139 27140'
+2026-08-06 14:12:20,793 - INFO - Fetched email subject/date snippet: 
+    <div style="font-family: Arial, sans-serif; max-width: 900px; margin: auto;">
+      
+      <h2 style="color:#2c3e50;">
+        📊 Daily Analysis Summary (2026-08-04 - 2026-08-05)
+      </h2>
+
+      <h3 style="margin-top:20px;">User & Chat Analytics</h3>
+      
+    <table style="border-c
+2026-08-06 14:12:21,230 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-06 14:12:21,269 - INFO - 3. Updating Master Excel File for 2026-08-04...
+2026-08-06 14:12:21,709 - INFO - ✅ Master Sheet Updated
+2026-08-06 14:12:21,709 - INFO - 4. Filtering data and analyzing metrics with Gemini...
+2026-08-06 14:12:22,409 - INFO - AFC is enabled with max remote calls: 10.
+2026-08-06 14:12:53,107 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-06 14:12:53,262 - INFO - 
+============================================================
+2026-08-06 14:12:53,262 - INFO - 📊 INFIHEAL PM DAILY DIGEST (2026-08-04)
+2026-08-06 14:12:53,262 - INFO - ============================================================
+2026-08-06 14:12:53,263 - INFO - **Urgent: Missing Daily Metrics for 2026-08-04**
+
+The provided `TODAY'S METRICS` payload is empty. This prevents any real-time comparison or anomaly detection against the 7-day averages. The analysis below is based solely on the provided 7-day averages, interpreted against historical context from previous reports.
+
+---
+
+🔴 **Critical Funnel Anomalies & Causal Analysis (Based on 7-Day Averages)**
+
+*   **Severe Test Completion Drop-off (24.2%):** Only 85 out of 351 test starts result in completion. This is a critical funnel leak.
+    *   *Hypothesis:* This low rate is likely driven by a combination of persistent signup/login wall friction (54% signup completion rate, 123 users encountering the wall) and issues within the tests themselves (length, discomfort, or immediate result expectation, as previously noted for tests like Allosexual/Asexual).
+*   **Persistent Healo Traffic Underperformance:** `Users coming to test page via healo` (52/day) remains significantly below May's baseline (232/day).
+    *   *Hypothesis:* The root cause of the "Healo traffic collapse" identified in June has not been fully resolved, impacting direct engagement with the core Healo platform.
+
+🟡 **Emerging Behavioral Trends (Based on 7-Day Averages)**
+
+*   **Homepage Irrelevance Confirmed:** `Unique Home users` (12) and `Avg time spent on Home` (0.61 min) continue to validate that the homepage is not a primary engagement or retention channel for web users, who predominantly enter via direct test links.
+*   **Niche, Deep Chat Engagement:** While overall chat engagement numbers are low relative to total traffic, the `Avg chat spend on healo chat` (34.93 minutes) is remarkably high for those who do engage, indicating significant value for a specific segment.
+
+🟢 **Core Funnel Baselines (Based on 7-Day Averages)**
+
+*   **SEO as Primary Acquisition:** SEO/Google Search remains the dominant traffic source for test pages (`Users coming to test page via SEO/goggle search`: 253), highlighting its critical role in user acquisition.
+*   **Login Flow Stability:** Login completion (63%) shows a relatively stable experience for returning users, though still with room for improvement.
+
+🔍 **Recommended PM Investigation & Action Plan**
+
+1.  **Immediate Data Ingestion Fix:** Prioritize resolving the empty `TODAY'S METRICS` payload to enable real-time analysis and anomaly detection.
+2.  **Deep Dive: Test Funnel Optimization:**
+    *   **Hotjar Recordings:** Set up recordings for users who `started test` but `did not complete` (URL path `/test/*`, event `test_started` AND NOT `test_completed`). Focus on drop-offs at the signup/login wall and within the first 25% of test questions.
+    *   **A/B Test Signup Wall:** Experiment with alternative signup wall placements or simplified authentication methods (e.g., prominent social login) to reduce friction.
+    *   **Test Content Audit:** Review top-volume, low-completion tests for length, question sensitivity, and immediate feedback mechanisms.
+3.  **Investigate Healo Traffic Recovery:** Conduct a comprehensive audit of internal linking, product visibility, and marketing efforts specifically driving traffic to core Healo features (beyond just tests).
+4.  **Clarify Chat Metrics & Nudge Strategy:** Standardize definitions for `Unique User Count` and `Total users who sent messages`. Explore in-test nudges or stronger first-message prompts to increase the number of users engaging with the high-value chat experience.
+5.  **Homepage Strategic Repurposing:** Given its low engagement, re-evaluate the homepage's role. Consider repurposing it as a dedicated B2B landing page or optimizing it for specific, high-value user journeys.
+2026-08-06 14:12:53,263 - INFO - 5. Sending automated email notification...
+2026-08-06 14:13:00,684 - INFO - ✅ Email sent successfully for 2026-08-04
+2026-08-06 14:13:00,684 - INFO - ============================================================
+2026-08-06 14:13:00,684 - INFO - ✅ Daily digest pipeline completed successfully!
+2026-08-06 14:13:00,684 - INFO - ============================================================
+2026-08-06 14:20:42,649 - INFO - ============================================================
+2026-08-06 14:20:42,649 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-06 14:20:42,649 - INFO - ============================================================
+2026-08-06 14:20:42,650 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-06 14:20:46,605 - INFO - IMAP search matched UIDs: b'25970 25971 25997 25998 26025 26026 26045 26046 26066 26067 26068 26085 26086 26110 26111 26129 26130 26152 26153 26173 26174 26201 26202 26203 26221 26222 26241 26242 26261 26262 26287 26288 26515 26516 26551 26552 26570 26571 26583 26584 26585 26595 26596 26602 26624 26625 26646 26647 26648 26665 26666 26694 26695 26716 26717 26737 26738 26751 26752 26775 26776 26777 26791 26792 26801 26802 26820 26821 26839 26840 26853 26854 26873 26874 26895 26896 26912 26913 26937 26938 26955 26956 26996 27012 27013 27030 27031 27046 27047 27065 27066 27076 27077 27088 27089 27100 27101 27124 27125 27139 27140'
+2026-08-06 14:20:47,548 - INFO - Fetched email subject/date snippet: 
+    <div style="font-family: Arial, sans-serif; max-width: 900px; margin: auto;">
+      
+      <h2 style="color:#2c3e50;">
+        📊 Daily Analysis Summary (2026-08-04 - 2026-08-05)
+      </h2>
+
+      <h3 style="margin-top:20px;">User & Chat Analytics</h3>
+      
+    <table style="border-c
+2026-08-06 14:20:48,002 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-06 14:20:48,040 - INFO - Parsed general_metrics (101 keys): {'Total Users who tried sign up': 74, 'Healo-Web (Non-Anonymous) users who tried Sign up': 6, 'Healo App (Non-Anonymous) Users who tried Sign up': 3, 'Test (Non-Anonymous) Users Who tried sign up': 34, 'Healo Web (Anonymous) users who tried Sign Up': 4, 'Healo App (Anonymous) users who tried Sign up': 0, 'Total Users who completed sign up - (Verified Only)': 40, 'Healo-Web (Non-Anonymous) users who completed Sign up': 6, 'Healo App (Non-Anonymous) Users who completed Sign up': 3, 'Test (Non-Anonymous) Users Who completed sign up': 31, 'Test (Anonymous) Users Who completed sign up': 27, 'Healo Web (Anonymous) users who completed Sign Up': 4, 'Healo App (Anonymous) users who completed Sign up': 0, 'Total users who tried log in / sign in': 38, 'Total users who completed sign in': 24, 'Healo Web   users who tried sign in': 18, 'Healo Web users who completed sign in': 12, 'App    users who tried sign in': 10, 'App  users who completed sign in': 7, "Total Convo ID's": 130, 'Unique User Count': 53, 'New signed up unique user count who sent atleast 1  message': 9, 'Total Prod User Message Count': 117, 'Total App User Message Count': 124, 'Total Dynamic User Message Count': 425, 'No. Healo Plans Purchased': '-', 'No. therapy booking': '-', 'Lupin UserÂ\xa0MessageÂ\xa0Count': 4, 'No. of users who clicked on invite someone to chat': 0, 'Start a DuoChat CTA count': 0, "'join the conversation' CTA count /How many user 2 joined the chat created/ Successful room creation": 0, 'Number of Users who viewed on the Profile Section': 14, 'number of users who actually started atleast one challenge': 3, 'number of users who actually started atleast one challenge(Other Then Chat_With_Healo)': 2, 'users who clicked at least one Home redirect': 4, 'No of users redirected to blogs via curated for you': 1, 'No of users redirected to tests via curated for you': 0, 'No of users redirected to Healo via Today in your plan': 1, 'No of users who clicked Book a Therapist': 34, 'No of users who clicked Chat With Healo': 29, 'No of users who clicked Duo Chat': 0, 'No of users who clicked Self Tests': 2, 'No of users who clicked Home': 14, 'No of users who clicked Al Journal': '-', 'No of users who clicked Focus Zone': '-', 'No of users who clicked Self Care': '-', 'No of users who clicked Music': 2, 'No of users who clicked Community': 4, 'No of users who clicked Personality Report': 0, 'No of users who clicked Mood meter': 2, 'No of users who clicked Streak': 1, 'No of users who clicked Heals': 3, 'Avg number of messages sent per user (Median)': 2, 'Total users who sent messages': 198, 'Total messages sent': 781, 'Min messages by a user': 1, 'Max messages by a user': 22, 'Avg chat spend on healo chat (in Minutes)': 34.93, 'Total conversations counted': 152, 'Total conversations created': 759, 'Min chat duration': 0.06, 'Max chat duration': 1073.67, 'Top 3 users with maximum messages sent': 222221, 'Number of returning users': 20, 'Avg time spent on Home (By screen Time ) (Minutes)': 0.61, 'Total time spent on Home (By screen Time ) (Minutes)': 7.35, 'Unique Home users': 12, 'Avg time spent on Healo (By screen Time ) (Minutes)': 39.51, 'Total time spent on Healo (By screen Time ) (Minutes)': 1935.78, 'Unique Healo users': 49, 'Avg time spent on DuoChat (By screen Time ) (Minutes)': 0.3, 'Total time spent on DuoChat (By screen Time ) (Minutes)': 0.9, 'Unique DuoChat users': 3, 'Total compatibitly test started  ( including via test card or meta screen)': 0, 'Compatibility test via meta screen click': 0, 'Compatibility test via Test Card': 0, 'Compatibilty test start in duo chat': 0, 'Compatibilty test finish in duo chat': 0, 'Blog page to Healo Page using Table of content': 0, 'Blog page to Test Page using Table of content': 0, 'Users coming to test page via SEO/goggle search': 253, 'Users coming to test page via healo': 52, 'Total users who started test ( SEO + HEALO combined)': 162, 'Start test action - via SEO traffic': 141, 'Start test action  - via Healo traffic': 21, 'Total Test Started From All Sources': 351, 'Users shown the Premium Test popup': 0, "Users who clicked 'Pay Now' on the Premium Test popup": 17, 'Total test completed': 85, 'Total users who clicked on Submit': 187, 'Total users who encounterd signup/login wall': 123, 'Users already logged in at the time of submission ( Return users)': 86, 'Total (Non-Anonymous) Users who completed sign up': 31, 'Total Users who completed sign in / Log in': 17, 'Total User redirected to Healo test  from test': 0, 'Total User redirected to Healo chatbot from test Share Link': 6, 'Total User redirected to Healo chatbot from Understand your score': 22, 'Test shared by user': 0, 'Top bar chatbot redirect clicks': 2, 'Total Room (chat + compatibilty game) Creation Of Unique Partners': 1, 'Total Daily Signups (Calculated)': 71}
+2026-08-06 14:20:48,040 - INFO - Parsed test_metrics (6 keys): {'personality-test/inkblot': {'Starts': 51, 'Finishes': 20, 'CR (%)': 39.22}, 'personality-test/asexual': {'Starts': 43, 'Finishes': 13, 'CR (%)': 30.23}, 'personality-test/allosexual': {'Starts': 43, 'Finishes': 12, 'CR (%)': 27.91}, 'personality-test/political-compass': {'Starts': 8, 'Finishes': 3, 'CR (%)': 37.5}, 'personality-test/ikigai': {'Starts': 7, 'Finishes': 3, 'CR (%)': 42.86}, 'personality-test/work-personality': {'Starts': 4, 'Finishes': 3, 'CR (%)': 75.0}}
+2026-08-06 14:20:48,040 - INFO - 3. Updating Master Excel File for 2026-08-04...
+2026-08-06 14:20:48,422 - ERROR - ❌ Critical error in daily digest pipeline: DataFrame.groupby() got an unexpected keyword argument 'axis'
+Traceback (most recent call last):
+  File "C:\Users\bmani\Downloads\Infiheal-Agent\triage_agent.py", line 417, in run_daily_digest
+    payload_for_gemini = update_excel_master_sheets(date_str, general_metrics, test_metrics)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\Downloads\Infiheal-Agent\triage_agent.py", line 269, in update_excel_master_sheets
+    test_avg_df = df_last_7.groupby(level=1, axis=1).mean().round(1)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\util\_decorators.py", line 336, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: DataFrame.groupby() got an unexpected keyword argument 'axis'
+2026-08-06 14:21:20,656 - INFO - ============================================================
+2026-08-06 14:21:20,656 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-06 14:21:20,656 - INFO - ============================================================
+2026-08-06 14:21:20,656 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-06 14:21:24,595 - INFO - IMAP search matched UIDs: b'25970 25971 25997 25998 26025 26026 26045 26046 26066 26067 26068 26085 26086 26110 26111 26129 26130 26152 26153 26173 26174 26201 26202 26203 26221 26222 26241 26242 26261 26262 26287 26288 26515 26516 26551 26552 26570 26571 26583 26584 26585 26595 26596 26602 26624 26625 26646 26647 26648 26665 26666 26694 26695 26716 26717 26737 26738 26751 26752 26775 26776 26777 26791 26792 26801 26802 26820 26821 26839 26840 26853 26854 26873 26874 26895 26896 26912 26913 26937 26938 26955 26956 26996 27012 27013 27030 27031 27046 27047 27065 27066 27076 27077 27088 27089 27100 27101 27124 27125 27139 27140'
+2026-08-06 14:21:25,240 - INFO - Fetched email subject/date snippet: 
+    <div style="font-family: Arial, sans-serif; max-width: 900px; margin: auto;">
+      
+      <h2 style="color:#2c3e50;">
+        📊 Daily Analysis Summary (2026-08-04 - 2026-08-05)
+      </h2>
+
+      <h3 style="margin-top:20px;">User & Chat Analytics</h3>
+      
+    <table style="border-c
+2026-08-06 14:21:25,701 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-06 14:21:25,739 - INFO - Parsed general_metrics (101 keys): {'Total Users who tried sign up': 74, 'Healo-Web (Non-Anonymous) users who tried Sign up': 6, 'Healo App (Non-Anonymous) Users who tried Sign up': 3, 'Test (Non-Anonymous) Users Who tried sign up': 34, 'Healo Web (Anonymous) users who tried Sign Up': 4, 'Healo App (Anonymous) users who tried Sign up': 0, 'Total Users who completed sign up - (Verified Only)': 40, 'Healo-Web (Non-Anonymous) users who completed Sign up': 6, 'Healo App (Non-Anonymous) Users who completed Sign up': 3, 'Test (Non-Anonymous) Users Who completed sign up': 31, 'Test (Anonymous) Users Who completed sign up': 27, 'Healo Web (Anonymous) users who completed Sign Up': 4, 'Healo App (Anonymous) users who completed Sign up': 0, 'Total users who tried log in / sign in': 38, 'Total users who completed sign in': 24, 'Healo Web   users who tried sign in': 18, 'Healo Web users who completed sign in': 12, 'App    users who tried sign in': 10, 'App  users who completed sign in': 7, "Total Convo ID's": 130, 'Unique User Count': 53, 'New signed up unique user count who sent atleast 1  message': 9, 'Total Prod User Message Count': 117, 'Total App User Message Count': 124, 'Total Dynamic User Message Count': 425, 'No. Healo Plans Purchased': '-', 'No. therapy booking': '-', 'Lupin UserÂ\xa0MessageÂ\xa0Count': 4, 'No. of users who clicked on invite someone to chat': 0, 'Start a DuoChat CTA count': 0, "'join the conversation' CTA count /How many user 2 joined the chat created/ Successful room creation": 0, 'Number of Users who viewed on the Profile Section': 14, 'number of users who actually started atleast one challenge': 3, 'number of users who actually started atleast one challenge(Other Then Chat_With_Healo)': 2, 'users who clicked at least one Home redirect': 4, 'No of users redirected to blogs via curated for you': 1, 'No of users redirected to tests via curated for you': 0, 'No of users redirected to Healo via Today in your plan': 1, 'No of users who clicked Book a Therapist': 34, 'No of users who clicked Chat With Healo': 29, 'No of users who clicked Duo Chat': 0, 'No of users who clicked Self Tests': 2, 'No of users who clicked Home': 14, 'No of users who clicked Al Journal': '-', 'No of users who clicked Focus Zone': '-', 'No of users who clicked Self Care': '-', 'No of users who clicked Music': 2, 'No of users who clicked Community': 4, 'No of users who clicked Personality Report': 0, 'No of users who clicked Mood meter': 2, 'No of users who clicked Streak': 1, 'No of users who clicked Heals': 3, 'Avg number of messages sent per user (Median)': 2, 'Total users who sent messages': 198, 'Total messages sent': 781, 'Min messages by a user': 1, 'Max messages by a user': 22, 'Avg chat spend on healo chat (in Minutes)': 34.93, 'Total conversations counted': 152, 'Total conversations created': 759, 'Min chat duration': 0.06, 'Max chat duration': 1073.67, 'Top 3 users with maximum messages sent': 222221, 'Number of returning users': 20, 'Avg time spent on Home (By screen Time ) (Minutes)': 0.61, 'Total time spent on Home (By screen Time ) (Minutes)': 7.35, 'Unique Home users': 12, 'Avg time spent on Healo (By screen Time ) (Minutes)': 39.51, 'Total time spent on Healo (By screen Time ) (Minutes)': 1935.78, 'Unique Healo users': 49, 'Avg time spent on DuoChat (By screen Time ) (Minutes)': 0.3, 'Total time spent on DuoChat (By screen Time ) (Minutes)': 0.9, 'Unique DuoChat users': 3, 'Total compatibitly test started  ( including via test card or meta screen)': 0, 'Compatibility test via meta screen click': 0, 'Compatibility test via Test Card': 0, 'Compatibilty test start in duo chat': 0, 'Compatibilty test finish in duo chat': 0, 'Blog page to Healo Page using Table of content': 0, 'Blog page to Test Page using Table of content': 0, 'Users coming to test page via SEO/goggle search': 253, 'Users coming to test page via healo': 52, 'Total users who started test ( SEO + HEALO combined)': 162, 'Start test action - via SEO traffic': 141, 'Start test action  - via Healo traffic': 21, 'Total Test Started From All Sources': 351, 'Users shown the Premium Test popup': 0, "Users who clicked 'Pay Now' on the Premium Test popup": 17, 'Total test completed': 85, 'Total users who clicked on Submit': 187, 'Total users who encounterd signup/login wall': 123, 'Users already logged in at the time of submission ( Return users)': 86, 'Total (Non-Anonymous) Users who completed sign up': 31, 'Total Users who completed sign in / Log in': 17, 'Total User redirected to Healo test  from test': 0, 'Total User redirected to Healo chatbot from test Share Link': 6, 'Total User redirected to Healo chatbot from Understand your score': 22, 'Test shared by user': 0, 'Top bar chatbot redirect clicks': 2, 'Total Room (chat + compatibilty game) Creation Of Unique Partners': 1, 'Total Daily Signups (Calculated)': 71}
+2026-08-06 14:21:25,740 - INFO - Parsed test_metrics (6 keys): {'personality-test/inkblot': {'Starts': 51, 'Finishes': 20, 'CR (%)': 39.22}, 'personality-test/asexual': {'Starts': 43, 'Finishes': 13, 'CR (%)': 30.23}, 'personality-test/allosexual': {'Starts': 43, 'Finishes': 12, 'CR (%)': 27.91}, 'personality-test/political-compass': {'Starts': 8, 'Finishes': 3, 'CR (%)': 37.5}, 'personality-test/ikigai': {'Starts': 7, 'Finishes': 3, 'CR (%)': 42.86}, 'personality-test/work-personality': {'Starts': 4, 'Finishes': 3, 'CR (%)': 75.0}}
+2026-08-06 14:21:25,740 - INFO - 3. Updating Master Excel File for 2026-08-04...
+2026-08-06 14:21:25,935 - INFO - ✅ Master Sheet Updated
+2026-08-06 14:21:25,936 - INFO - 4. Filtering data and analyzing metrics with Gemini...
+2026-08-06 14:21:25,936 - INFO - Filtered today (55 keys): {'Total Users who tried sign up': 74, 'Healo-Web (Non-Anonymous) users who tried Sign up': 6, 'Healo App (Non-Anonymous) Users who tried Sign up': 3, 'Test (Non-Anonymous) Users Who tried sign up': 34, 'Healo Web (Anonymous) users who tried Sign Up': 4, 'Healo App (Anonymous) users who tried Sign up': 0, 'Total Users who completed sign up - (Verified Only)': 40, 'Healo-Web (Non-Anonymous) users who completed Sign up': 6, 'Healo App (Non-Anonymous) Users who completed Sign up': 3, 'Test (Non-Anonymous) Users Who completed sign up': 31, 'Test (Anonymous) Users Who completed sign up': 27, 'Healo Web (Anonymous) users who completed Sign Up': 4, 'Healo App (Anonymous) users who completed Sign up': 0, 'Total users who tried log in / sign in': 38, 'Total users who completed sign in': 24, 'Healo Web users who tried sign in': 18, 'Healo Web users who completed sign in': 12, 'App users who tried sign in': 10, 'App users who completed sign in': 7, "Total Convo ID's": 130, 'Unique User Count': 53, 'Avg number of messages sent per user (Median)': 2, 'Total users who sent messages': 198, 'Total messages sent': 781, 'Min messages by a user': 1, 'Max messages by a user': 22, 'Avg chat spend on healo chat (in Minutes)': 34.93, 'Total conversations counted': 152, 'Total conversations created': 759, 'Min chat duration': 0.06, 'Max chat duration': 1073.67, 'Top 3 users with maximum messages sent': 222221, 'Number of returning users': 20, 'Avg time spent on Home (By screen Time ) (Minutes)': 0.61, 'Total time spent on Home (By screen Time ) (Minutes)': 7.35, 'Unique Home users': 12, 'Avg time spent on Healo (By screen Time ) (Minutes)': 39.51, 'Total time spent on Healo (By screen Time ) (Minutes)': 1935.78, 'Unique Healo users': 49, 'Users coming to test page via SEO/goggle search': 253, 'Users coming to test page via healo': 52, 'Total users who started test ( SEO + HEALO combined)': 162, 'Start test action - via SEO traffic': 141, 'Start test action - via Healo traffic': 21, 'Total Test Started From All Sources': 351, 'Users shown the Premium Test popup': 0, "Users who clicked 'Pay Now' on the Premium Test popup": 17, 'Total test completed': 85, 'Total users who clicked on Submit': 187, 'Total users who encounterd signup/login wall': 123, 'Users already logged in at the time of submission ( Return users)': 86, 'Total (Non-Anonymous) Users who completed sign up': 31, 'Total Users who completed sign in / Log in': 17, 'Total User redirected to Healo chatbot from Understand your score': 22, 'Total Daily Signups (Calculated)': 71}
+2026-08-06 14:21:25,936 - INFO - Filtered 7-day (55 keys): {'Total Users who tried sign up': 74, 'Healo-Web (Non-Anonymous) users who tried Sign up': 6, 'Healo App (Non-Anonymous) Users who tried Sign up': 3, 'Test (Non-Anonymous) Users Who tried sign up': 34, 'Healo Web (Anonymous) users who tried Sign Up': 4, 'Healo App (Anonymous) users who tried Sign up': 0, 'Total Users who completed sign up - (Verified Only)': 40, 'Healo-Web (Non-Anonymous) users who completed Sign up': 6, 'Healo App (Non-Anonymous) Users who completed Sign up': 3, 'Test (Non-Anonymous) Users Who completed sign up': 31, 'Test (Anonymous) Users Who completed sign up': 27, 'Healo Web (Anonymous) users who completed Sign Up': 4, 'Healo App (Anonymous) users who completed Sign up': 0, 'Total users who tried log in / sign in': 38, 'Total users who completed sign in': 24, 'Healo Web users who tried sign in': 18, 'Healo Web users who completed sign in': 12, 'App users who tried sign in': 10, 'App users who completed sign in': 7, "Total Convo ID's": 130, 'Unique User Count': 53, 'Avg number of messages sent per user (Median)': 2, 'Total users who sent messages': 198, 'Total messages sent': 781, 'Min messages by a user': 1, 'Max messages by a user': 22, 'Avg chat spend on healo chat (in Minutes)': 34.93, 'Total conversations counted': 152, 'Total conversations created': 759, 'Min chat duration': 0.06, 'Max chat duration': 1073.67, 'Top 3 users with maximum messages sent': 222221, 'Number of returning users': 20, 'Avg time spent on Home (By screen Time ) (Minutes)': 0.61, 'Total time spent on Home (By screen Time ) (Minutes)': 7.35, 'Unique Home users': 12, 'Avg time spent on Healo (By screen Time ) (Minutes)': 39.51, 'Total time spent on Healo (By screen Time ) (Minutes)': 1935.78, 'Unique Healo users': 49, 'Users coming to test page via SEO/goggle search': 253, 'Users coming to test page via healo': 52, 'Total users who started test ( SEO + HEALO combined)': 162, 'Start test action - via SEO traffic': 141, 'Start test action - via Healo traffic': 21, 'Total Test Started From All Sources': 351, 'Users shown the Premium Test popup': 0, "Users who clicked 'Pay Now' on the Premium Test popup": 17, 'Total test completed': 85, 'Total users who clicked on Submit': 187, 'Total users who encounterd signup/login wall': 123, 'Users already logged in at the time of submission ( Return users)': 86, 'Total (Non-Anonymous) Users who completed sign up': 31, 'Total Users who completed sign in / Log in': 17, 'Total User redirected to Healo chatbot from Understand your score': 22, 'Total Daily Signups (Calculated)': 71}
+2026-08-06 14:21:26,661 - INFO - AFC is enabled with max remote calls: 10.
+2026-08-06 14:21:34,076 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-06 14:21:34,207 - INFO - 
+============================================================
+2026-08-06 14:21:34,207 - INFO - 📊 INFIHEAL PM DAILY DIGEST (2026-08-04)
+2026-08-06 14:21:34,207 - INFO - ============================================================
+2026-08-06 14:21:34,208 - INFO - 🔴 **Critical Funnel Anomalies & Causal Analysis**
+
+*   **Root Metric:** Absence of "TODAY'S METRICS" payload.
+*   **Secondary Impact:** Unable to perform any daily performance analysis, anomaly detection, or trend identification for August 4th, 2026. This directly impacts product decision-making and real-time health monitoring.
+*   **Product Hypothesis:** This indicates a critical failure in our data ingestion, processing, or reporting pipeline. Without daily data, we are operating blind.
+
+🟡 **Emerging Behavioral Trends**
+
+*   Cannot identify any emerging trends without today's data.
+
+🟢 **Core Funnel Baselines**
+
+*   Cannot confirm if core funnel metrics are operating healthily today without current data. The provided 7-day averages serve as our *expected* baseline, but we cannot verify today's performance against them.
+
+🔍 **Recommended PM Investigation & Action Plan**
+
+*   **IMMEDIATE ACTION:** Investigate the data pipeline for August 4th, 2026. Determine why the `TODAY'S METRICS` payload is empty.
+*   **Data Recovery:** Prioritize recovery or re-ingestion of August 4th's data to enable retrospective analysis.
+*   **Monitoring:** Verify data logging and reporting systems are operational and sending complete payloads for subsequent days.
+*   **Alerting:** Ensure critical data pipeline failures trigger immediate alerts to the data engineering and product teams.
+2026-08-06 14:21:34,208 - INFO - 5. Sending automated email notification...
+2026-08-06 14:21:41,772 - INFO - ✅ Email sent successfully for 2026-08-04
+2026-08-06 14:21:41,772 - INFO - ============================================================
+2026-08-06 14:21:41,773 - INFO - ✅ Daily digest pipeline completed successfully!
+2026-08-06 14:21:41,773 - INFO - ============================================================
+2026-08-06 14:28:39,167 - INFO - ============================================================
+2026-08-06 14:28:39,167 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-06 14:28:39,168 - INFO - ============================================================
+2026-08-06 14:28:39,168 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-06 14:28:42,435 - INFO - IMAP search matched UIDs: b'25970 25971 25997 25998 26025 26026 26045 26046 26066 26067 26068 26085 26086 26110 26111 26129 26130 26152 26153 26173 26174 26201 26202 26203 26221 26222 26241 26242 26261 26262 26287 26288 26515 26516 26551 26552 26570 26571 26583 26584 26585 26595 26596 26602 26624 26625 26646 26647 26648 26665 26666 26694 26695 26716 26717 26737 26738 26751 26752 26775 26776 26777 26791 26792 26801 26802 26820 26821 26839 26840 26853 26854 26873 26874 26895 26896 26912 26913 26937 26938 26955 26956 26996 27012 27013 27030 27031 27046 27047 27065 27066 27076 27077 27088 27089 27100 27101 27124 27125 27139 27140'
+2026-08-06 14:28:43,157 - INFO - Fetched email subject/date snippet: 
+    <div style="font-family: Arial, sans-serif; max-width: 900px; margin: auto;">
+      
+      <h2 style="color:#2c3e50;">
+        📊 Daily Analysis Summary (2026-08-04 - 2026-08-05)
+      </h2>
+
+      <h3 style="margin-top:20px;">User & Chat Analytics</h3>
+      
+    <table style="border-c
+2026-08-06 14:28:43,595 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-06 14:28:43,637 - INFO - Parsed general_metrics (101 keys): {'Total Users who tried sign up': 74, 'Healo-Web (Non-Anonymous) users who tried Sign up': 6, 'Healo App (Non-Anonymous) Users who tried Sign up': 3, 'Test (Non-Anonymous) Users Who tried sign up': 34, 'Healo Web (Anonymous) users who tried Sign Up': 4, 'Healo App (Anonymous) users who tried Sign up': 0, 'Total Users who completed sign up - (Verified Only)': 40, 'Healo-Web (Non-Anonymous) users who completed Sign up': 6, 'Healo App (Non-Anonymous) Users who completed Sign up': 3, 'Test (Non-Anonymous) Users Who completed sign up': 31, 'Test (Anonymous) Users Who completed sign up': 27, 'Healo Web (Anonymous) users who completed Sign Up': 4, 'Healo App (Anonymous) users who completed Sign up': 0, 'Total users who tried log in / sign in': 38, 'Total users who completed sign in': 24, 'Healo Web   users who tried sign in': 18, 'Healo Web users who completed sign in': 12, 'App    users who tried sign in': 10, 'App  users who completed sign in': 7, "Total Convo ID's": 130, 'Unique User Count': 53, 'New signed up unique user count who sent atleast 1  message': 9, 'Total Prod User Message Count': 117, 'Total App User Message Count': 124, 'Total Dynamic User Message Count': 425, 'No. Healo Plans Purchased': '-', 'No. therapy booking': '-', 'Lupin UserÂ\xa0MessageÂ\xa0Count': 4, 'No. of users who clicked on invite someone to chat': 0, 'Start a DuoChat CTA count': 0, "'join the conversation' CTA count /How many user 2 joined the chat created/ Successful room creation": 0, 'Number of Users who viewed on the Profile Section': 14, 'number of users who actually started atleast one challenge': 3, 'number of users who actually started atleast one challenge(Other Then Chat_With_Healo)': 2, 'users who clicked at least one Home redirect': 4, 'No of users redirected to blogs via curated for you': 1, 'No of users redirected to tests via curated for you': 0, 'No of users redirected to Healo via Today in your plan': 1, 'No of users who clicked Book a Therapist': 34, 'No of users who clicked Chat With Healo': 29, 'No of users who clicked Duo Chat': 0, 'No of users who clicked Self Tests': 2, 'No of users who clicked Home': 14, 'No of users who clicked Al Journal': '-', 'No of users who clicked Focus Zone': '-', 'No of users who clicked Self Care': '-', 'No of users who clicked Music': 2, 'No of users who clicked Community': 4, 'No of users who clicked Personality Report': 0, 'No of users who clicked Mood meter': 2, 'No of users who clicked Streak': 1, 'No of users who clicked Heals': 3, 'Avg number of messages sent per user (Median)': 2, 'Total users who sent messages': 198, 'Total messages sent': 781, 'Min messages by a user': 1, 'Max messages by a user': 22, 'Avg chat spend on healo chat (in Minutes)': 34.93, 'Total conversations counted': 152, 'Total conversations created': 759, 'Min chat duration': 0.06, 'Max chat duration': 1073.67, 'Top 3 users with maximum messages sent': 222221, 'Number of returning users': 20, 'Avg time spent on Home (By screen Time ) (Minutes)': 0.61, 'Total time spent on Home (By screen Time ) (Minutes)': 7.35, 'Unique Home users': 12, 'Avg time spent on Healo (By screen Time ) (Minutes)': 39.51, 'Total time spent on Healo (By screen Time ) (Minutes)': 1935.78, 'Unique Healo users': 49, 'Avg time spent on DuoChat (By screen Time ) (Minutes)': 0.3, 'Total time spent on DuoChat (By screen Time ) (Minutes)': 0.9, 'Unique DuoChat users': 3, 'Total compatibitly test started  ( including via test card or meta screen)': 0, 'Compatibility test via meta screen click': 0, 'Compatibility test via Test Card': 0, 'Compatibilty test start in duo chat': 0, 'Compatibilty test finish in duo chat': 0, 'Blog page to Healo Page using Table of content': 0, 'Blog page to Test Page using Table of content': 0, 'Users coming to test page via SEO/goggle search': 253, 'Users coming to test page via healo': 52, 'Total users who started test ( SEO + HEALO combined)': 162, 'Start test action - via SEO traffic': 141, 'Start test action  - via Healo traffic': 21, 'Total Test Started From All Sources': 351, 'Users shown the Premium Test popup': 0, "Users who clicked 'Pay Now' on the Premium Test popup": 17, 'Total test completed': 85, 'Total users who clicked on Submit': 187, 'Total users who encounterd signup/login wall': 123, 'Users already logged in at the time of submission ( Return users)': 86, 'Total (Non-Anonymous) Users who completed sign up': 31, 'Total Users who completed sign in / Log in': 17, 'Total User redirected to Healo test  from test': 0, 'Total User redirected to Healo chatbot from test Share Link': 6, 'Total User redirected to Healo chatbot from Understand your score': 22, 'Test shared by user': 0, 'Top bar chatbot redirect clicks': 2, 'Total Room (chat + compatibilty game) Creation Of Unique Partners': 1, 'Total Daily Signups (Calculated)': 71}
+2026-08-06 14:28:43,637 - INFO - Parsed test_metrics (6 keys): {'personality-test/inkblot': {'Starts': 51, 'Finishes': 20, 'CR (%)': 39.22}, 'personality-test/asexual': {'Starts': 43, 'Finishes': 13, 'CR (%)': 30.23}, 'personality-test/allosexual': {'Starts': 43, 'Finishes': 12, 'CR (%)': 27.91}, 'personality-test/political-compass': {'Starts': 8, 'Finishes': 3, 'CR (%)': 37.5}, 'personality-test/ikigai': {'Starts': 7, 'Finishes': 3, 'CR (%)': 42.86}, 'personality-test/work-personality': {'Starts': 4, 'Finishes': 3, 'CR (%)': 75.0}}
+2026-08-06 14:28:43,638 - INFO - 3. Updating Master Excel File for 2026-08-04...
+2026-08-06 14:28:43,980 - ERROR - ❌ Critical error in daily digest pipeline: DataFrame.groupby() got an unexpected keyword argument 'axis'
+Traceback (most recent call last):
+  File "C:\Users\bmani\Downloads\Infiheal-Agent\triage_agent.py", line 426, in run_daily_digest
+    payload_for_gemini = update_excel_master_sheets(date_str, general_metrics, test_metrics)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\Downloads\Infiheal-Agent\triage_agent.py", line 269, in update_excel_master_sheets
+    test_avg_df = df_last_7.groupby(level=1, axis=1).mean().round(1)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\util\_decorators.py", line 336, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: DataFrame.groupby() got an unexpected keyword argument 'axis'
+2026-08-06 14:28:58,097 - INFO - ============================================================
+2026-08-06 14:28:58,097 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-06 14:28:58,097 - INFO - ============================================================
+2026-08-06 14:28:58,097 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-06 14:29:01,351 - INFO - IMAP search matched UIDs: b'25970 25971 25997 25998 26025 26026 26045 26046 26066 26067 26068 26085 26086 26110 26111 26129 26130 26152 26153 26173 26174 26201 26202 26203 26221 26222 26241 26242 26261 26262 26287 26288 26515 26516 26551 26552 26570 26571 26583 26584 26585 26595 26596 26602 26624 26625 26646 26647 26648 26665 26666 26694 26695 26716 26717 26737 26738 26751 26752 26775 26776 26777 26791 26792 26801 26802 26820 26821 26839 26840 26853 26854 26873 26874 26895 26896 26912 26913 26937 26938 26955 26956 26996 27012 27013 27030 27031 27046 27047 27065 27066 27076 27077 27088 27089 27100 27101 27124 27125 27139 27140'
+2026-08-06 14:29:01,978 - INFO - Fetched email subject/date snippet: 
+    <div style="font-family: Arial, sans-serif; max-width: 900px; margin: auto;">
+      
+      <h2 style="color:#2c3e50;">
+        📊 Daily Analysis Summary (2026-08-04 - 2026-08-05)
+      </h2>
+
+      <h3 style="margin-top:20px;">User & Chat Analytics</h3>
+      
+    <table style="border-c
+2026-08-06 14:29:02,448 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-06 14:29:02,485 - INFO - Parsed general_metrics (101 keys): {'Total Users who tried sign up': 74, 'Healo-Web (Non-Anonymous) users who tried Sign up': 6, 'Healo App (Non-Anonymous) Users who tried Sign up': 3, 'Test (Non-Anonymous) Users Who tried sign up': 34, 'Healo Web (Anonymous) users who tried Sign Up': 4, 'Healo App (Anonymous) users who tried Sign up': 0, 'Total Users who completed sign up - (Verified Only)': 40, 'Healo-Web (Non-Anonymous) users who completed Sign up': 6, 'Healo App (Non-Anonymous) Users who completed Sign up': 3, 'Test (Non-Anonymous) Users Who completed sign up': 31, 'Test (Anonymous) Users Who completed sign up': 27, 'Healo Web (Anonymous) users who completed Sign Up': 4, 'Healo App (Anonymous) users who completed Sign up': 0, 'Total users who tried log in / sign in': 38, 'Total users who completed sign in': 24, 'Healo Web   users who tried sign in': 18, 'Healo Web users who completed sign in': 12, 'App    users who tried sign in': 10, 'App  users who completed sign in': 7, "Total Convo ID's": 130, 'Unique User Count': 53, 'New signed up unique user count who sent atleast 1  message': 9, 'Total Prod User Message Count': 117, 'Total App User Message Count': 124, 'Total Dynamic User Message Count': 425, 'No. Healo Plans Purchased': '-', 'No. therapy booking': '-', 'Lupin UserÂ\xa0MessageÂ\xa0Count': 4, 'No. of users who clicked on invite someone to chat': 0, 'Start a DuoChat CTA count': 0, "'join the conversation' CTA count /How many user 2 joined the chat created/ Successful room creation": 0, 'Number of Users who viewed on the Profile Section': 14, 'number of users who actually started atleast one challenge': 3, 'number of users who actually started atleast one challenge(Other Then Chat_With_Healo)': 2, 'users who clicked at least one Home redirect': 4, 'No of users redirected to blogs via curated for you': 1, 'No of users redirected to tests via curated for you': 0, 'No of users redirected to Healo via Today in your plan': 1, 'No of users who clicked Book a Therapist': 34, 'No of users who clicked Chat With Healo': 29, 'No of users who clicked Duo Chat': 0, 'No of users who clicked Self Tests': 2, 'No of users who clicked Home': 14, 'No of users who clicked Al Journal': '-', 'No of users who clicked Focus Zone': '-', 'No of users who clicked Self Care': '-', 'No of users who clicked Music': 2, 'No of users who clicked Community': 4, 'No of users who clicked Personality Report': 0, 'No of users who clicked Mood meter': 2, 'No of users who clicked Streak': 1, 'No of users who clicked Heals': 3, 'Avg number of messages sent per user (Median)': 2, 'Total users who sent messages': 198, 'Total messages sent': 781, 'Min messages by a user': 1, 'Max messages by a user': 22, 'Avg chat spend on healo chat (in Minutes)': 34.93, 'Total conversations counted': 152, 'Total conversations created': 759, 'Min chat duration': 0.06, 'Max chat duration': 1073.67, 'Top 3 users with maximum messages sent': 222221, 'Number of returning users': 20, 'Avg time spent on Home (By screen Time ) (Minutes)': 0.61, 'Total time spent on Home (By screen Time ) (Minutes)': 7.35, 'Unique Home users': 12, 'Avg time spent on Healo (By screen Time ) (Minutes)': 39.51, 'Total time spent on Healo (By screen Time ) (Minutes)': 1935.78, 'Unique Healo users': 49, 'Avg time spent on DuoChat (By screen Time ) (Minutes)': 0.3, 'Total time spent on DuoChat (By screen Time ) (Minutes)': 0.9, 'Unique DuoChat users': 3, 'Total compatibitly test started  ( including via test card or meta screen)': 0, 'Compatibility test via meta screen click': 0, 'Compatibility test via Test Card': 0, 'Compatibilty test start in duo chat': 0, 'Compatibilty test finish in duo chat': 0, 'Blog page to Healo Page using Table of content': 0, 'Blog page to Test Page using Table of content': 0, 'Users coming to test page via SEO/goggle search': 253, 'Users coming to test page via healo': 52, 'Total users who started test ( SEO + HEALO combined)': 162, 'Start test action - via SEO traffic': 141, 'Start test action  - via Healo traffic': 21, 'Total Test Started From All Sources': 351, 'Users shown the Premium Test popup': 0, "Users who clicked 'Pay Now' on the Premium Test popup": 17, 'Total test completed': 85, 'Total users who clicked on Submit': 187, 'Total users who encounterd signup/login wall': 123, 'Users already logged in at the time of submission ( Return users)': 86, 'Total (Non-Anonymous) Users who completed sign up': 31, 'Total Users who completed sign in / Log in': 17, 'Total User redirected to Healo test  from test': 0, 'Total User redirected to Healo chatbot from test Share Link': 6, 'Total User redirected to Healo chatbot from Understand your score': 22, 'Test shared by user': 0, 'Top bar chatbot redirect clicks': 2, 'Total Room (chat + compatibilty game) Creation Of Unique Partners': 1, 'Total Daily Signups (Calculated)': 71}
+2026-08-06 14:29:02,486 - INFO - Parsed test_metrics (6 keys): {'personality-test/inkblot': {'Starts': 51, 'Finishes': 20, 'CR (%)': 39.22}, 'personality-test/asexual': {'Starts': 43, 'Finishes': 13, 'CR (%)': 30.23}, 'personality-test/allosexual': {'Starts': 43, 'Finishes': 12, 'CR (%)': 27.91}, 'personality-test/political-compass': {'Starts': 8, 'Finishes': 3, 'CR (%)': 37.5}, 'personality-test/ikigai': {'Starts': 7, 'Finishes': 3, 'CR (%)': 42.86}, 'personality-test/work-personality': {'Starts': 4, 'Finishes': 3, 'CR (%)': 75.0}}
+2026-08-06 14:29:02,486 - INFO - 3. Updating Master Excel File for 2026-08-04...
+2026-08-06 14:29:02,668 - INFO - ✅ Master Sheet Updated
+2026-08-06 14:29:02,668 - INFO - 4. Filtering data and analyzing metrics with Gemini...
+2026-08-06 14:29:02,669 - INFO - Filtered today (55 keys): {'Total Users who tried sign up': 74, 'Healo-Web (Non-Anonymous) users who tried Sign up': 6, 'Healo App (Non-Anonymous) Users who tried Sign up': 3, 'Test (Non-Anonymous) Users Who tried sign up': 34, 'Healo Web (Anonymous) users who tried Sign Up': 4, 'Healo App (Anonymous) users who tried Sign up': 0, 'Total Users who completed sign up - (Verified Only)': 40, 'Healo-Web (Non-Anonymous) users who completed Sign up': 6, 'Healo App (Non-Anonymous) Users who completed Sign up': 3, 'Test (Non-Anonymous) Users Who completed sign up': 31, 'Test (Anonymous) Users Who completed sign up': 27, 'Healo Web (Anonymous) users who completed Sign Up': 4, 'Healo App (Anonymous) users who completed Sign up': 0, 'Total users who tried log in / sign in': 38, 'Total users who completed sign in': 24, 'Healo Web users who tried sign in': 18, 'Healo Web users who completed sign in': 12, 'App users who tried sign in': 10, 'App users who completed sign in': 7, "Total Convo ID's": 130, 'Unique User Count': 53, 'Avg number of messages sent per user (Median)': 2, 'Total users who sent messages': 198, 'Total messages sent': 781, 'Min messages by a user': 1, 'Max messages by a user': 22, 'Avg chat spend on healo chat (in Minutes)': 34.93, 'Total conversations counted': 152, 'Total conversations created': 759, 'Min chat duration': 0.06, 'Max chat duration': 1073.67, 'Top 3 users with maximum messages sent': 222221, 'Number of returning users': 20, 'Avg time spent on Home (By screen Time ) (Minutes)': 0.61, 'Total time spent on Home (By screen Time ) (Minutes)': 7.35, 'Unique Home users': 12, 'Avg time spent on Healo (By screen Time ) (Minutes)': 39.51, 'Total time spent on Healo (By screen Time ) (Minutes)': 1935.78, 'Unique Healo users': 49, 'Users coming to test page via SEO/goggle search': 253, 'Users coming to test page via healo': 52, 'Total users who started test ( SEO + HEALO combined)': 162, 'Start test action - via SEO traffic': 141, 'Start test action - via Healo traffic': 21, 'Total Test Started From All Sources': 351, 'Users shown the Premium Test popup': 0, "Users who clicked 'Pay Now' on the Premium Test popup": 17, 'Total test completed': 85, 'Total users who clicked on Submit': 187, 'Total users who encounterd signup/login wall': 123, 'Users already logged in at the time of submission ( Return users)': 86, 'Total (Non-Anonymous) Users who completed sign up': 31, 'Total Users who completed sign in / Log in': 17, 'Total User redirected to Healo chatbot from Understand your score': 22, 'Total Daily Signups (Calculated)': 71}
+2026-08-06 14:29:02,669 - INFO - Filtered 7-day (55 keys): {'Total Users who tried sign up': 74, 'Healo-Web (Non-Anonymous) users who tried Sign up': 6, 'Healo App (Non-Anonymous) Users who tried Sign up': 3, 'Test (Non-Anonymous) Users Who tried sign up': 34, 'Healo Web (Anonymous) users who tried Sign Up': 4, 'Healo App (Anonymous) users who tried Sign up': 0, 'Total Users who completed sign up - (Verified Only)': 40, 'Healo-Web (Non-Anonymous) users who completed Sign up': 6, 'Healo App (Non-Anonymous) Users who completed Sign up': 3, 'Test (Non-Anonymous) Users Who completed sign up': 31, 'Test (Anonymous) Users Who completed sign up': 27, 'Healo Web (Anonymous) users who completed Sign Up': 4, 'Healo App (Anonymous) users who completed Sign up': 0, 'Total users who tried log in / sign in': 38, 'Total users who completed sign in': 24, 'Healo Web users who tried sign in': 18, 'Healo Web users who completed sign in': 12, 'App users who tried sign in': 10, 'App users who completed sign in': 7, "Total Convo ID's": 130, 'Unique User Count': 53, 'Avg number of messages sent per user (Median)': 2, 'Total users who sent messages': 198, 'Total messages sent': 781, 'Min messages by a user': 1, 'Max messages by a user': 22, 'Avg chat spend on healo chat (in Minutes)': 34.93, 'Total conversations counted': 152, 'Total conversations created': 759, 'Min chat duration': 0.06, 'Max chat duration': 1073.67, 'Top 3 users with maximum messages sent': 222221, 'Number of returning users': 20, 'Avg time spent on Home (By screen Time ) (Minutes)': 0.61, 'Total time spent on Home (By screen Time ) (Minutes)': 7.35, 'Unique Home users': 12, 'Avg time spent on Healo (By screen Time ) (Minutes)': 39.51, 'Total time spent on Healo (By screen Time ) (Minutes)': 1935.78, 'Unique Healo users': 49, 'Users coming to test page via SEO/goggle search': 253, 'Users coming to test page via healo': 52, 'Total users who started test ( SEO + HEALO combined)': 162, 'Start test action - via SEO traffic': 141, 'Start test action - via Healo traffic': 21, 'Total Test Started From All Sources': 351, 'Users shown the Premium Test popup': 0, "Users who clicked 'Pay Now' on the Premium Test popup": 17, 'Total test completed': 85, 'Total users who clicked on Submit': 187, 'Total users who encounterd signup/login wall': 123, 'Users already logged in at the time of submission ( Return users)': 86, 'Total (Non-Anonymous) Users who completed sign up': 31, 'Total Users who completed sign in / Log in': 17, 'Total User redirected to Healo chatbot from Understand your score': 22, 'Total Daily Signups (Calculated)': 71}
+2026-08-06 14:29:03,363 - INFO - AFC is enabled with max remote calls: 10.
+2026-08-06 14:29:31,164 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-06 14:29:31,263 - INFO - 
+============================================================
+2026-08-06 14:29:31,263 - INFO - 📊 INFIHEAL PM DAILY DIGEST (2026-08-04)
+2026-08-06 14:29:31,264 - INFO - ============================================================
+2026-08-06 14:29:31,264 - INFO - 🔴 **Critical Funnel Anomalies & Causal Analysis**
+
+*   **Inkblot Test Completion Rate Collapse (CR: 39.22%)**:
+    *   **Root Metric**: `personality-test/inkblot` completion rate.
+    *   **Secondary Impact**: Significantly drags down overall test completion (`Total test completed` is 85 vs `Total Test Started From All Sources` 351, ~24% CR). This is a critical drop from its historical healthy range (87-103% in June) and even below its recent "broken" state (45-55% in July).
+    *   **Product Hypothesis**: Highly likely a technical issue (e.g., the previously observed "Google authentication failed" for mobile users) or a sudden influx of extremely low-intent traffic specifically for this test.
+
+*   **Persistent Signup/Login Wall Friction (52% Conversion)**:
+    *   **Root Metric**: Conversion rate from `Total users who encounterd signup/login wall` (123) to successful authentication (`Total Users who completed sign up` 40 + `Total users who completed sign in` 24 = 64).
+    *   **Secondary Impact**: Directly limits new user acquisition and test completion. Nearly half of users encountering the wall drop off, indicating significant friction or lack of motivation to proceed. This aligns with the previously flagged high wall hit rate (65.7% today, consistent with 62% in June).
+    *   **Product Hypothesis**: Users are either unwilling to commit after completing a test, finding the signup/login process cumbersome, or encountering technical glitches (like the Google auth failure mentioned previously).
+
+*   **Allosexual & Asexual Tests Remain Critically Low (CR: 27.91% & 30.23%)**:
+    *   **Root Metric**: Completion rates for these high-volume tests.
+    *   **Secondary Impact**: Despite high starts, their consistently low completion rates waste significant user interest and traffic, contributing to the overall low platform completion.
+    *   **Product Hypothesis**: Tests are too long, questions are uncomfortable, or the immediate result expectation is not met, leading to abandonment before the signup wall.
+
+🟡 **Emerging Behavioral Trends**
+
+*   **Homepage Bypass Continues**: Only 12 `Unique Home users` compared to 253 `Users coming to test page via SEO/goggle search`. This reinforces the observation that users primarily enter the platform directly through self-tests, bypassing the homepage as a primary entry or engagement point.
+*   **New Tests Gaining Traction**: `political-compass`, `ikigai`, and `work-personality` have entered the top 5 tests by volume, indicating diversifying user interest beyond the usual high-volume tests.
+*   **High Chat Engagement (for Engaged Users)**: `Avg chat spend on healo chat` is 34.93 minutes, suggesting deep engagement for those who do interact. However, the discrepancy between `Total users who sent messages` (198) and `Unique User Count` (53) needs clarification to understand the true breadth of chat engagement.
+
+🟢 **Core Funnel Baselines**
+
+*   All other daily metrics are stable and consistent with the provided 7-day averages. This indicates no *new* spikes or drops across these specific metrics compared to the immediate past week, though persistent issues (like the ones highlighted above) remain.
+
+🔍 **Recommended PM Investigation & Action Plan**
+
+1.  **Immediate Inkblot Test Deep Dive**:
+    *   **Hotjar**: Set up recordings and heatmaps specifically for `personality-test/inkblot` (URL path: `/personality-test/inkblot`) targeting mobile users, focusing on drop-off points and post-submit behavior.
+    *   **Technical Audit**: Investigate backend logs for `personality-test/inkblot` submissions for any errors (e.g., Google authentication failures, server errors) on August 4th.
+    *   **GSC**: Check Google Search Console for `personality-test/inkblot` for any sudden changes in keyword rankings, impressions, or CTR that might indicate a new, lower-intent audience.
+
+2.  **Optimize Signup/Login Wall Conversion**:
+    *   **Hotjar**: Set up event tracking on the signup/login wall (`Total users who encounterd signup/login wall` event) to identify specific points of friction (e.g., form field abandonment, error messages, specific button clicks).
+    *   **A/B Test**: Explore A/B testing different wall experiences (e.g., shorter forms, social login prominence, clearer value proposition for signing up).
+    *   **Review Authentication Flow**: Re-evaluate the Google authentication process, especially for mobile users, given past issues.
+
+3.  **Address Allosexual & Asexual Completion**:
+    *   **Hotjar**: Analyze recordings for these tests to understand where users drop off (e.g., specific question types, test length).
+    *   **Product Review**: Consider breaking down longer tests, adding progress indicators, or providing interim value/feedback to encourage completion.
+
+4.  **Clarify Chat Engagement Metrics**:
+    *   **Data Team**: Request a clear definition and reconciliation of `Total users who sent messages` vs `Unique User Count` to accurately assess chat engagement and track the "Engage Rate" trend.
+2026-08-06 14:29:31,264 - INFO - 5. Sending automated email notification...
+2026-08-06 14:29:37,773 - INFO - ✅ Email sent successfully for 2026-08-04
+2026-08-06 14:29:37,773 - INFO - ============================================================
+2026-08-06 14:29:37,774 - INFO - ✅ Daily digest pipeline completed successfully!
+2026-08-06 14:29:37,774 - INFO - ============================================================
+2026-08-06 15:01:53,106 - INFO - ============================================================
+2026-08-06 15:01:53,106 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-06 15:01:53,106 - INFO - ============================================================
+2026-08-06 15:01:53,106 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-06 15:01:56,404 - INFO - IMAP search matched UIDs: b'25970 25971 25997 25998 26025 26026 26045 26046 26066 26067 26068 26085 26086 26110 26111 26129 26130 26152 26153 26173 26174 26201 26202 26203 26221 26222 26241 26242 26261 26262 26287 26288 26515 26516 26551 26552 26570 26571 26583 26584 26585 26595 26596 26602 26624 26625 26646 26647 26648 26665 26666 26694 26695 26716 26717 26737 26738 26751 26752 26775 26776 26777 26791 26792 26801 26802 26820 26821 26839 26840 26853 26854 26873 26874 26895 26896 26912 26913 26937 26938 26955 26956 26996 27012 27013 27030 27031 27046 27047 27065 27066 27076 27077 27088 27089 27100 27101 27124 27125 27139 27140 27174 27175'
+2026-08-06 15:01:57,076 - INFO - Fetched email subject/date snippet: 
+    <div style="font-family: Arial, sans-serif; max-width: 900px; margin: auto;">
+      
+      <h2 style="color:#2c3e50;">
+        📊 Daily Analysis Summary (2026-08-05 - 2026-08-06)
+      </h2>
+
+      <h3 style="margin-top:20px;">User & Chat Analytics</h3>
+      
+    <table style="border-c
+2026-08-06 15:01:57,510 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-06 15:01:57,550 - INFO - Parsed general_metrics (101 keys): {'Total Users who tried sign up': 71, 'Healo-Web (Non-Anonymous) users who tried Sign up': 5, 'Healo App (Non-Anonymous) Users who tried Sign up': 3, 'Test (Non-Anonymous) Users Who tried sign up': 27, 'Healo Web (Anonymous) users who tried Sign Up': 1, 'Healo App (Anonymous) users who tried Sign up': 2, 'Total Users who completed sign up - (Verified Only)': 32, 'Healo-Web (Non-Anonymous) users who completed Sign up': 5, 'Healo App (Non-Anonymous) Users who completed Sign up': 3, 'Test (Non-Anonymous) Users Who completed sign up': 23, 'Test (Anonymous) Users Who completed sign up': 32, 'Healo Web (Anonymous) users who completed Sign Up': 1, 'Healo App (Anonymous) users who completed Sign up': 2, 'Total users who tried log in / sign in': 50, 'Total users who completed sign in': 26, 'Healo Web   users who tried sign in': 32, 'Healo Web users who completed sign in': 18, 'App    users who tried sign in': 7, 'App  users who completed sign in': 6, "Total Convo ID's": 85, 'Unique User Count': 57, 'New signed up unique user count who sent atleast 1  message': 10, 'Total Prod User Message Count': 173, 'Total App User Message Count': 111, 'Total Dynamic User Message Count': 204, 'No. Healo Plans Purchased': '-', 'No. therapy booking': '-', 'Lupin UserÂ\xa0MessageÂ\xa0Count': 1, 'No. of users who clicked on invite someone to chat': 0, 'Start a DuoChat CTA count': 0, "'join the conversation' CTA count /How many user 2 joined the chat created/ Successful room creation": 1, 'Number of Users who viewed on the Profile Section': 22, 'number of users who actually started atleast one challenge': 8, 'number of users who actually started atleast one challenge(Other Then Chat_With_Healo)': 6, 'users who clicked at least one Home redirect': 10, 'No of users redirected to blogs via curated for you': 2, 'No of users redirected to tests via curated for you': 0, 'No of users redirected to Healo via Today in your plan': 4, 'No of users who clicked Book a Therapist': 24, 'No of users who clicked Chat With Healo': 31, 'No of users who clicked Duo Chat': 13, 'No of users who clicked Self Tests': 9, 'No of users who clicked Home': 20, 'No of users who clicked Al Journal': '-', 'No of users who clicked Focus Zone': '-', 'No of users who clicked Self Care': '-', 'No of users who clicked Music': 11, 'No of users who clicked Community': 12, 'No of users who clicked Personality Report': 2, 'No of users who clicked Mood meter': 5, 'No of users who clicked Streak': 3, 'No of users who clicked Heals': 4, 'Avg number of messages sent per user (Median)': 3, 'Total users who sent messages': 157, 'Total messages sent': 573, 'Min messages by a user': 1, 'Max messages by a user': 22, 'Avg chat spend on healo chat (in Minutes)': 39.08, 'Total conversations counted': 139, 'Total conversations created': 952, 'Min chat duration': 0.03, 'Max chat duration': 1340.7, 'Top 3 users with maximum messages sent': 222217, 'Number of returning users': 18, 'Avg time spent on Home (By screen Time ) (Minutes)': 6.15, 'Total time spent on Home (By screen Time ) (Minutes)': 67.67, 'Unique Home users': 11, 'Avg time spent on Healo (By screen Time ) (Minutes)': 38.6, 'Total time spent on Healo (By screen Time ) (Minutes)': 1736.83, 'Unique Healo users': 45, 'Avg time spent on DuoChat (By screen Time ) (Minutes)': 8.58, 'Total time spent on DuoChat (By screen Time ) (Minutes)': 42.92, 'Unique DuoChat users': 5, 'Total compatibitly test started  ( including via test card or meta screen)': 1, 'Compatibility test via meta screen click': 0, 'Compatibility test via Test Card': 0, 'Compatibilty test start in duo chat': 1, 'Compatibilty test finish in duo chat': 0, 'Blog page to Healo Page using Table of content': 0, 'Blog page to Test Page using Table of content': 0, 'Users coming to test page via SEO/goggle search': 155, 'Users coming to test page via healo': 36, 'Total users who started test ( SEO + HEALO combined)': 141, 'Start test action - via SEO traffic': 112, 'Start test action  - via Healo traffic': 29, 'Total Test Started From All Sources': 262, 'Users shown the Premium Test popup': 0, "Users who clicked 'Pay Now' on the Premium Test popup": 8, 'Total test completed': 93, 'Total users who clicked on Submit': 148, 'Total users who encounterd signup/login wall': 102, 'Users already logged in at the time of submission ( Return users)': 77, 'Total (Non-Anonymous) Users who completed sign up': 23, 'Total Users who completed sign in / Log in': 8, 'Total User redirected to Healo test  from test': 7, 'Total User redirected to Healo chatbot from test Share Link': 13, 'Total User redirected to Healo chatbot from Understand your score': 10, 'Test shared by user': 0, 'Top bar chatbot redirect clicks': 3, 'Total Room (chat + compatibilty game) Creation Of Unique Partners': 3, 'Total Daily Signups (Calculated)': 66}
+2026-08-06 15:01:57,551 - INFO - Parsed test_metrics (6 keys): {'personality-test/allosexual': {'Starts': 30, 'Finishes': 15, 'CR (%)': 50.0}, 'personality-test/inkblot': {'Starts': 26, 'Finishes': 12, 'CR (%)': 46.15}, 'personality-test/asexual': {'Starts': 26, 'Finishes': 12, 'CR (%)': 46.15}, 'personality-test/love-test': {'Starts': 25, 'Finishes': 10, 'CR (%)': 40.0}, 'personality-test/functional-freeze': {'Starts': 11, 'Finishes': 5, 'CR (%)': 45.45}, 'personality-test/work-personality': {'Starts': 6, 'Finishes': 4, 'CR (%)': 66.67}}
+2026-08-06 15:01:57,551 - INFO - 3. Updating Master Excel File for 2026-08-05...
+2026-08-06 15:01:58,009 - ERROR - ❌ Critical error in daily digest pipeline: DataFrame.groupby() got an unexpected keyword argument 'axis'
+Traceback (most recent call last):
+  File "C:\Users\bmani\Downloads\Infiheal-Agent\triage_agent.py", line 428, in run_daily_digest
+    payload_for_gemini = update_excel_master_sheets(date_str, general_metrics, test_metrics)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\Downloads\Infiheal-Agent\triage_agent.py", line 269, in update_excel_master_sheets
+    test_avg_df = df_last_7.groupby(level=1, axis=1).mean().round(1)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\util\_decorators.py", line 336, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: DataFrame.groupby() got an unexpected keyword argument 'axis'
+2026-08-06 15:07:08,304 - INFO - ============================================================
+2026-08-06 15:07:08,304 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-06 15:07:08,304 - INFO - ============================================================
+2026-08-06 15:07:08,304 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-06 15:07:11,544 - INFO - IMAP search matched UIDs: b'25970 25971 25997 25998 26025 26026 26045 26046 26066 26067 26068 26085 26086 26110 26111 26129 26130 26152 26153 26173 26174 26201 26202 26203 26221 26222 26241 26242 26261 26262 26287 26288 26515 26516 26551 26552 26570 26571 26583 26584 26585 26595 26596 26602 26624 26625 26646 26647 26648 26665 26666 26694 26695 26716 26717 26737 26738 26751 26752 26775 26776 26777 26791 26792 26801 26802 26820 26821 26839 26840 26853 26854 26873 26874 26895 26896 26912 26913 26937 26938 26955 26956 26996 27012 27013 27030 27031 27046 27047 27065 27066 27076 27077 27088 27089 27100 27101 27124 27125 27139 27140 27174 27175'
+2026-08-06 15:07:12,130 - INFO - Fetched email subject/date snippet: 
+    <div style="font-family: Arial, sans-serif; max-width: 900px; margin: auto;">
+      
+      <h2 style="color:#2c3e50;">
+        📊 Daily Analysis Summary (2026-08-05 - 2026-08-06)
+      </h2>
+
+      <h3 style="margin-top:20px;">User & Chat Analytics</h3>
+      
+    <table style="border-c
+2026-08-06 15:07:12,524 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-06 15:07:12,560 - INFO - Parsed general_metrics (101 keys): {'Total Users who tried sign up': 71, 'Healo-Web (Non-Anonymous) users who tried Sign up': 5, 'Healo App (Non-Anonymous) Users who tried Sign up': 3, 'Test (Non-Anonymous) Users Who tried sign up': 27, 'Healo Web (Anonymous) users who tried Sign Up': 1, 'Healo App (Anonymous) users who tried Sign up': 2, 'Total Users who completed sign up - (Verified Only)': 32, 'Healo-Web (Non-Anonymous) users who completed Sign up': 5, 'Healo App (Non-Anonymous) Users who completed Sign up': 3, 'Test (Non-Anonymous) Users Who completed sign up': 23, 'Test (Anonymous) Users Who completed sign up': 32, 'Healo Web (Anonymous) users who completed Sign Up': 1, 'Healo App (Anonymous) users who completed Sign up': 2, 'Total users who tried log in / sign in': 50, 'Total users who completed sign in': 26, 'Healo Web   users who tried sign in': 32, 'Healo Web users who completed sign in': 18, 'App    users who tried sign in': 7, 'App  users who completed sign in': 6, "Total Convo ID's": 85, 'Unique User Count': 57, 'New signed up unique user count who sent atleast 1  message': 10, 'Total Prod User Message Count': 173, 'Total App User Message Count': 111, 'Total Dynamic User Message Count': 204, 'No. Healo Plans Purchased': '-', 'No. therapy booking': '-', 'Lupin UserÂ\xa0MessageÂ\xa0Count': 1, 'No. of users who clicked on invite someone to chat': 0, 'Start a DuoChat CTA count': 0, "'join the conversation' CTA count /How many user 2 joined the chat created/ Successful room creation": 1, 'Number of Users who viewed on the Profile Section': 22, 'number of users who actually started atleast one challenge': 8, 'number of users who actually started atleast one challenge(Other Then Chat_With_Healo)': 6, 'users who clicked at least one Home redirect': 10, 'No of users redirected to blogs via curated for you': 2, 'No of users redirected to tests via curated for you': 0, 'No of users redirected to Healo via Today in your plan': 4, 'No of users who clicked Book a Therapist': 24, 'No of users who clicked Chat With Healo': 31, 'No of users who clicked Duo Chat': 13, 'No of users who clicked Self Tests': 9, 'No of users who clicked Home': 20, 'No of users who clicked Al Journal': '-', 'No of users who clicked Focus Zone': '-', 'No of users who clicked Self Care': '-', 'No of users who clicked Music': 11, 'No of users who clicked Community': 12, 'No of users who clicked Personality Report': 2, 'No of users who clicked Mood meter': 5, 'No of users who clicked Streak': 3, 'No of users who clicked Heals': 4, 'Avg number of messages sent per user (Median)': 3, 'Total users who sent messages': 157, 'Total messages sent': 573, 'Min messages by a user': 1, 'Max messages by a user': 22, 'Avg chat spend on healo chat (in Minutes)': 39.08, 'Total conversations counted': 139, 'Total conversations created': 952, 'Min chat duration': 0.03, 'Max chat duration': 1340.7, 'Top 3 users with maximum messages sent': 222217, 'Number of returning users': 18, 'Avg time spent on Home (By screen Time ) (Minutes)': 6.15, 'Total time spent on Home (By screen Time ) (Minutes)': 67.67, 'Unique Home users': 11, 'Avg time spent on Healo (By screen Time ) (Minutes)': 38.6, 'Total time spent on Healo (By screen Time ) (Minutes)': 1736.83, 'Unique Healo users': 45, 'Avg time spent on DuoChat (By screen Time ) (Minutes)': 8.58, 'Total time spent on DuoChat (By screen Time ) (Minutes)': 42.92, 'Unique DuoChat users': 5, 'Total compatibitly test started  ( including via test card or meta screen)': 1, 'Compatibility test via meta screen click': 0, 'Compatibility test via Test Card': 0, 'Compatibilty test start in duo chat': 1, 'Compatibilty test finish in duo chat': 0, 'Blog page to Healo Page using Table of content': 0, 'Blog page to Test Page using Table of content': 0, 'Users coming to test page via SEO/goggle search': 155, 'Users coming to test page via healo': 36, 'Total users who started test ( SEO + HEALO combined)': 141, 'Start test action - via SEO traffic': 112, 'Start test action  - via Healo traffic': 29, 'Total Test Started From All Sources': 262, 'Users shown the Premium Test popup': 0, "Users who clicked 'Pay Now' on the Premium Test popup": 8, 'Total test completed': 93, 'Total users who clicked on Submit': 148, 'Total users who encounterd signup/login wall': 102, 'Users already logged in at the time of submission ( Return users)': 77, 'Total (Non-Anonymous) Users who completed sign up': 23, 'Total Users who completed sign in / Log in': 8, 'Total User redirected to Healo test  from test': 7, 'Total User redirected to Healo chatbot from test Share Link': 13, 'Total User redirected to Healo chatbot from Understand your score': 10, 'Test shared by user': 0, 'Top bar chatbot redirect clicks': 3, 'Total Room (chat + compatibilty game) Creation Of Unique Partners': 3, 'Total Daily Signups (Calculated)': 66}
+2026-08-06 15:07:12,561 - INFO - Parsed test_metrics (6 keys): {'personality-test/allosexual': {'Starts': 30, 'Finishes': 15, 'CR (%)': 50.0}, 'personality-test/inkblot': {'Starts': 26, 'Finishes': 12, 'CR (%)': 46.15}, 'personality-test/asexual': {'Starts': 26, 'Finishes': 12, 'CR (%)': 46.15}, 'personality-test/love-test': {'Starts': 25, 'Finishes': 10, 'CR (%)': 40.0}, 'personality-test/functional-freeze': {'Starts': 11, 'Finishes': 5, 'CR (%)': 45.45}, 'personality-test/work-personality': {'Starts': 6, 'Finishes': 4, 'CR (%)': 66.67}}
+2026-08-06 15:07:12,561 - INFO - 3. Updating Master Excel File for 2026-08-05...
+2026-08-06 15:07:12,985 - ERROR - ❌ Critical error in daily digest pipeline: Invalid value '-' for dtype 'float64'
+Traceback (most recent call last):
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\internals\blocks.py", line 1175, in putmask
+    casted = np_can_hold_element(values.dtype, new)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\dtypes\cast.py", line 1792, in np_can_hold_element
+    raise LossySetitemError
+pandas.errors.LossySetitemError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\bmani\Downloads\Infiheal-Agent\triage_agent.py", line 428, in run_daily_digest
+    payload_for_gemini = update_excel_master_sheets(date_str, general_metrics, test_metrics)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\Downloads\Infiheal-Agent\triage_agent.py", line 291, in update_excel_master_sheets
+    df_tests.fillna('-', inplace=True)
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\generic.py", line 7147, in fillna
+    new_data = self._mgr.fillna(value=value, limit=limit, inplace=inplace)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\internals\managers.py", line 461, in fillna
+    return self.apply(
+           ^^^^^^^^^^^
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\internals\managers.py", line 445, in apply
+    applied = getattr(b, f)(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\internals\blocks.py", line 1342, in fillna
+    nbs = self.putmask(mask.T, value)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\internals\blocks.py", line 1188, in putmask
+    return self.coerce_to_target_dtype(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bmani\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\internals\blocks.py", line 468, in coerce_to_target_dtype
+    raise TypeError(f"Invalid value '{other}' for dtype '{self.values.dtype}'")
+TypeError: Invalid value '-' for dtype 'float64'
+2026-08-06 15:10:08,529 - INFO - ============================================================
+2026-08-06 15:10:08,530 - INFO - 🚀 Starting Daily Infiheal PM Digest Pipeline
+2026-08-06 15:10:08,530 - INFO - ============================================================
+2026-08-06 15:10:08,530 - INFO - 1. Fetching today's metrics from Gmail...
+2026-08-06 15:10:11,844 - INFO - IMAP search matched UIDs: b'25970 25971 25997 25998 26025 26026 26045 26046 26066 26067 26068 26085 26086 26110 26111 26129 26130 26152 26153 26173 26174 26201 26202 26203 26221 26222 26241 26242 26261 26262 26287 26288 26515 26516 26551 26552 26570 26571 26583 26584 26585 26595 26596 26602 26624 26625 26646 26647 26648 26665 26666 26694 26695 26716 26717 26737 26738 26751 26752 26775 26776 26777 26791 26792 26801 26802 26820 26821 26839 26840 26853 26854 26873 26874 26895 26896 26912 26913 26937 26938 26955 26956 26996 27012 27013 27030 27031 27046 27047 27065 27066 27076 27077 27088 27089 27100 27101 27124 27125 27139 27140 27174 27175'
+2026-08-06 15:10:12,598 - INFO - Fetched email subject/date snippet: 
+    <div style="font-family: Arial, sans-serif; max-width: 900px; margin: auto;">
+      
+      <h2 style="color:#2c3e50;">
+        📊 Daily Analysis Summary (2026-08-05 - 2026-08-06)
+      </h2>
+
+      <h3 style="margin-top:20px;">User & Chat Analytics</h3>
+      
+    <table style="border-c
+2026-08-06 15:10:12,998 - INFO - 2. Parsing HTML tables into separate metric streams...
+2026-08-06 15:10:13,040 - INFO - Parsed general_metrics (101 keys): {'Total Users who tried sign up': 71, 'Healo-Web (Non-Anonymous) users who tried Sign up': 5, 'Healo App (Non-Anonymous) Users who tried Sign up': 3, 'Test (Non-Anonymous) Users Who tried sign up': 27, 'Healo Web (Anonymous) users who tried Sign Up': 1, 'Healo App (Anonymous) users who tried Sign up': 2, 'Total Users who completed sign up - (Verified Only)': 32, 'Healo-Web (Non-Anonymous) users who completed Sign up': 5, 'Healo App (Non-Anonymous) Users who completed Sign up': 3, 'Test (Non-Anonymous) Users Who completed sign up': 23, 'Test (Anonymous) Users Who completed sign up': 32, 'Healo Web (Anonymous) users who completed Sign Up': 1, 'Healo App (Anonymous) users who completed Sign up': 2, 'Total users who tried log in / sign in': 50, 'Total users who completed sign in': 26, 'Healo Web   users who tried sign in': 32, 'Healo Web users who completed sign in': 18, 'App    users who tried sign in': 7, 'App  users who completed sign in': 6, "Total Convo ID's": 85, 'Unique User Count': 57, 'New signed up unique user count who sent atleast 1  message': 10, 'Total Prod User Message Count': 173, 'Total App User Message Count': 111, 'Total Dynamic User Message Count': 204, 'No. Healo Plans Purchased': '-', 'No. therapy booking': '-', 'Lupin UserÂ\xa0MessageÂ\xa0Count': 1, 'No. of users who clicked on invite someone to chat': 0, 'Start a DuoChat CTA count': 0, "'join the conversation' CTA count /How many user 2 joined the chat created/ Successful room creation": 1, 'Number of Users who viewed on the Profile Section': 22, 'number of users who actually started atleast one challenge': 8, 'number of users who actually started atleast one challenge(Other Then Chat_With_Healo)': 6, 'users who clicked at least one Home redirect': 10, 'No of users redirected to blogs via curated for you': 2, 'No of users redirected to tests via curated for you': 0, 'No of users redirected to Healo via Today in your plan': 4, 'No of users who clicked Book a Therapist': 24, 'No of users who clicked Chat With Healo': 31, 'No of users who clicked Duo Chat': 13, 'No of users who clicked Self Tests': 9, 'No of users who clicked Home': 20, 'No of users who clicked Al Journal': '-', 'No of users who clicked Focus Zone': '-', 'No of users who clicked Self Care': '-', 'No of users who clicked Music': 11, 'No of users who clicked Community': 12, 'No of users who clicked Personality Report': 2, 'No of users who clicked Mood meter': 5, 'No of users who clicked Streak': 3, 'No of users who clicked Heals': 4, 'Avg number of messages sent per user (Median)': 3, 'Total users who sent messages': 157, 'Total messages sent': 573, 'Min messages by a user': 1, 'Max messages by a user': 22, 'Avg chat spend on healo chat (in Minutes)': 39.08, 'Total conversations counted': 139, 'Total conversations created': 952, 'Min chat duration': 0.03, 'Max chat duration': 1340.7, 'Top 3 users with maximum messages sent': 222217, 'Number of returning users': 18, 'Avg time spent on Home (By screen Time ) (Minutes)': 6.15, 'Total time spent on Home (By screen Time ) (Minutes)': 67.67, 'Unique Home users': 11, 'Avg time spent on Healo (By screen Time ) (Minutes)': 38.6, 'Total time spent on Healo (By screen Time ) (Minutes)': 1736.83, 'Unique Healo users': 45, 'Avg time spent on DuoChat (By screen Time ) (Minutes)': 8.58, 'Total time spent on DuoChat (By screen Time ) (Minutes)': 42.92, 'Unique DuoChat users': 5, 'Total compatibitly test started  ( including via test card or meta screen)': 1, 'Compatibility test via meta screen click': 0, 'Compatibility test via Test Card': 0, 'Compatibilty test start in duo chat': 1, 'Compatibilty test finish in duo chat': 0, 'Blog page to Healo Page using Table of content': 0, 'Blog page to Test Page using Table of content': 0, 'Users coming to test page via SEO/goggle search': 155, 'Users coming to test page via healo': 36, 'Total users who started test ( SEO + HEALO combined)': 141, 'Start test action - via SEO traffic': 112, 'Start test action  - via Healo traffic': 29, 'Total Test Started From All Sources': 262, 'Users shown the Premium Test popup': 0, "Users who clicked 'Pay Now' on the Premium Test popup": 8, 'Total test completed': 93, 'Total users who clicked on Submit': 148, 'Total users who encounterd signup/login wall': 102, 'Users already logged in at the time of submission ( Return users)': 77, 'Total (Non-Anonymous) Users who completed sign up': 23, 'Total Users who completed sign in / Log in': 8, 'Total User redirected to Healo test  from test': 7, 'Total User redirected to Healo chatbot from test Share Link': 13, 'Total User redirected to Healo chatbot from Understand your score': 10, 'Test shared by user': 0, 'Top bar chatbot redirect clicks': 3, 'Total Room (chat + compatibilty game) Creation Of Unique Partners': 3, 'Total Daily Signups (Calculated)': 66}
+2026-08-06 15:10:13,040 - INFO - Parsed test_metrics (6 keys): {'personality-test/allosexual': {'Starts': 30, 'Finishes': 15, 'CR (%)': 50.0}, 'personality-test/inkblot': {'Starts': 26, 'Finishes': 12, 'CR (%)': 46.15}, 'personality-test/asexual': {'Starts': 26, 'Finishes': 12, 'CR (%)': 46.15}, 'personality-test/love-test': {'Starts': 25, 'Finishes': 10, 'CR (%)': 40.0}, 'personality-test/functional-freeze': {'Starts': 11, 'Finishes': 5, 'CR (%)': 45.45}, 'personality-test/work-personality': {'Starts': 6, 'Finishes': 4, 'CR (%)': 66.67}}
+2026-08-06 15:10:13,041 - INFO - 3. Updating Master Excel File for 2026-08-05...
+2026-08-06 15:10:13,337 - INFO - ✅ Master Sheet Updated
+2026-08-06 15:10:13,338 - INFO - 4. Filtering data and analyzing metrics with Gemini...
+2026-08-06 15:10:13,338 - INFO - Filtered today (55 keys): {'Total Users who tried sign up': 71, 'Healo-Web (Non-Anonymous) users who tried Sign up': 5, 'Healo App (Non-Anonymous) Users who tried Sign up': 3, 'Test (Non-Anonymous) Users Who tried sign up': 27, 'Healo Web (Anonymous) users who tried Sign Up': 1, 'Healo App (Anonymous) users who tried Sign up': 2, 'Total Users who completed sign up - (Verified Only)': 32, 'Healo-Web (Non-Anonymous) users who completed Sign up': 5, 'Healo App (Non-Anonymous) Users who completed Sign up': 3, 'Test (Non-Anonymous) Users Who completed sign up': 23, 'Test (Anonymous) Users Who completed sign up': 32, 'Healo Web (Anonymous) users who completed Sign Up': 1, 'Healo App (Anonymous) users who completed Sign up': 2, 'Total users who tried log in / sign in': 50, 'Total users who completed sign in': 26, 'Healo Web users who tried sign in': 32, 'Healo Web users who completed sign in': 18, 'App users who tried sign in': 7, 'App users who completed sign in': 6, "Total Convo ID's": 85, 'Unique User Count': 57, 'Avg number of messages sent per user (Median)': 3, 'Total users who sent messages': 157, 'Total messages sent': 573, 'Min messages by a user': 1, 'Max messages by a user': 22, 'Avg chat spend on healo chat (in Minutes)': 39.08, 'Total conversations counted': 139, 'Total conversations created': 952, 'Min chat duration': 0.03, 'Max chat duration': 1340.7, 'Top 3 users with maximum messages sent': 222217, 'Number of returning users': 18, 'Avg time spent on Home (By screen Time ) (Minutes)': 6.15, 'Total time spent on Home (By screen Time ) (Minutes)': 67.67, 'Unique Home users': 11, 'Avg time spent on Healo (By screen Time ) (Minutes)': 38.6, 'Total time spent on Healo (By screen Time ) (Minutes)': 1736.83, 'Unique Healo users': 45, 'Users coming to test page via SEO/goggle search': 155, 'Users coming to test page via healo': 36, 'Total users who started test ( SEO + HEALO combined)': 141, 'Start test action - via SEO traffic': 112, 'Start test action - via Healo traffic': 29, 'Total Test Started From All Sources': 262, 'Users shown the Premium Test popup': 0, "Users who clicked 'Pay Now' on the Premium Test popup": 8, 'Total test completed': 93, 'Total users who clicked on Submit': 148, 'Total users who encounterd signup/login wall': 102, 'Users already logged in at the time of submission ( Return users)': 77, 'Total (Non-Anonymous) Users who completed sign up': 23, 'Total Users who completed sign in / Log in': 8, 'Total User redirected to Healo chatbot from Understand your score': 10, 'Total Daily Signups (Calculated)': 66}
+2026-08-06 15:10:13,338 - INFO - Filtered 7-day (55 keys): {'Total Users who tried sign up': 74.0, 'Healo-Web (Non-Anonymous) users who tried Sign up': 6.0, 'Healo App (Non-Anonymous) Users who tried Sign up': 3.0, 'Test (Non-Anonymous) Users Who tried sign up': 34.0, 'Healo Web (Anonymous) users who tried Sign Up': 4.0, 'Healo App (Anonymous) users who tried Sign up': 0.0, 'Total Users who completed sign up - (Verified Only)': 40.0, 'Healo-Web (Non-Anonymous) users who completed Sign up': 6.0, 'Healo App (Non-Anonymous) Users who completed Sign up': 3.0, 'Test (Non-Anonymous) Users Who completed sign up': 31.0, 'Test (Anonymous) Users Who completed sign up': 27.0, 'Healo Web (Anonymous) users who completed Sign Up': 4.0, 'Healo App (Anonymous) users who completed Sign up': 0.0, 'Total users who tried log in / sign in': 38.0, 'Total users who completed sign in': 24.0, 'Healo Web users who tried sign in': 18.0, 'Healo Web users who completed sign in': 12.0, 'App users who tried sign in': 10.0, 'App users who completed sign in': 7.0, "Total Convo ID's": 130.0, 'Unique User Count': 53.0, 'Avg number of messages sent per user (Median)': 2.0, 'Total users who sent messages': 198.0, 'Total messages sent': 781.0, 'Min messages by a user': 1.0, 'Max messages by a user': 22.0, 'Avg chat spend on healo chat (in Minutes)': 34.93, 'Total conversations counted': 152.0, 'Total conversations created': 759.0, 'Min chat duration': 0.06, 'Max chat duration': 1073.67, 'Top 3 users with maximum messages sent': 222221.0, 'Number of returning users': 20.0, 'Avg time spent on Home (By screen Time ) (Minutes)': 0.61, 'Total time spent on Home (By screen Time ) (Minutes)': 7.35, 'Unique Home users': 12.0, 'Avg time spent on Healo (By screen Time ) (Minutes)': 39.51, 'Total time spent on Healo (By screen Time ) (Minutes)': 1935.78, 'Unique Healo users': 49.0, 'Users coming to test page via SEO/goggle search': 253.0, 'Users coming to test page via healo': 52.0, 'Total users who started test ( SEO + HEALO combined)': 162.0, 'Start test action - via SEO traffic': 141.0, 'Start test action - via Healo traffic': 21.0, 'Total Test Started From All Sources': 351.0, 'Users shown the Premium Test popup': 0.0, "Users who clicked 'Pay Now' on the Premium Test popup": 17.0, 'Total test completed': 85.0, 'Total users who clicked on Submit': 187.0, 'Total users who encounterd signup/login wall': 123.0, 'Users already logged in at the time of submission ( Return users)': 86.0, 'Total (Non-Anonymous) Users who completed sign up': 31.0, 'Total Users who completed sign in / Log in': 17.0, 'Total User redirected to Healo chatbot from Understand your score': 22.0, 'Total Daily Signups (Calculated)': 71.0}
+2026-08-06 15:10:14,050 - INFO - AFC is enabled with max remote calls: 10.
+2026-08-06 15:10:43,135 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-06 15:10:43,250 - INFO - 
+============================================================
+2026-08-06 15:10:43,250 - INFO - 📊 INFIHEAL PM DAILY DIGEST (2026-08-05)
+2026-08-06 15:10:43,250 - INFO - ============================================================
+2026-08-06 15:10:43,250 - INFO - **PM Digest: 2026-08-05 Performance Snapshot**
+
+🔴 **Critical Funnel Anomalies & Causal Analysis**
+
+*   **SEO Traffic Collapse & Test Starts:** `Users coming to test page via SEO/Google search` plummeted by 38.7% (155 vs. 253 avg), directly causing a 25.3% drop in `Total Test Started From All Sources` (262 vs. 351 avg).
+    *   *Hypothesis:* A significant drop in organic visibility or ranking for key test-related keywords is starving the top of our acquisition funnel.
+*   **Premium Test Funnel Breakage:** `Users shown the Premium Test popup` is 0, yet 8 users `clicked 'Pay Now' on the Premium Test popup`.
+    *   *Hypothesis:* This indicates a severe tracking error or a fundamental breakdown in the premium test conversion flow. Users are somehow bypassing the popup or the event is misfiring.
+*   **Chat Engagement Paradox:** `Total conversations created` spiked by 25.4% (952 vs. 759 avg), but `Total users who sent messages` dropped by 20.7% (157 vs. 198 avg) and `Total messages sent` by 26.6% (573 vs. 781 avg).
+    *   *Hypothesis:* Users are initiating conversations but not engaging further, suggesting friction in the first message experience or a disconnect between conversation creation and actual user interaction. This aligns with the "Engage Rate decline" previously flagged.
+*   **Homepage Time Anomaly:** `Avg time spent on Home` (6.15 min vs. 0.61 min avg) and `Total time spent on Home` (67.67 min vs. 7.35 min avg) show massive spikes (+900% and +820% respectively), despite `Unique Home users` remaining stable.
+    *   *Hypothesis:* This is highly suspicious and likely a tracking error, or a few users are leaving the homepage open for extended, inactive periods, skewing the average.
+*   **Verified Signup Conversion Drop:** `Total Users who completed sign up - (Verified Only)` is down 20% (32 vs. 40 avg), despite `Test (Anonymous) Users Who completed sign up` increasing by 18.5% (32 vs. 27 avg).
+    *   *Hypothesis:* While more anonymous users are completing tests and potentially attempting signup, there's increased friction or a problem in the verification step for new users, leading to fewer *verified* accounts.
+*   **Login Metric Discrepancy:** `Total users who tried log in / sign in` spiked by 31.5% (50 vs. 38 avg), and `Healo Web users who completed sign in` is up 50% (18 vs. 12 avg). However, the aggregate `Total Users who completed sign in / Log in` shows a 53% drop (8 vs. 17 avg).
+    *   *Hypothesis:* There's a significant inconsistency in login completion metrics, making it difficult to assess true login health. The high attempt rate suggests increased user intent to log in, but the conflicting completion numbers obscure the actual success rate.
+
+🟡 **Emerging Behavioral Trends**
+
+*   **Improved Test Engagement (for some):** Despite lower overall test starts, `Total test completed` is slightly up (+9.4%). Several top tests (`allosexual`, `asexual`, `inkblot`) show significantly improved completion rates (e.g., `allosexual` CR 50% vs. 27.9% avg, `asexual` CR 46.15% vs. 30.2% avg). This suggests that users who *do* start these tests are finding them more engaging or less friction-filled mid-test.
+*   **New Test Entrants:** `personality-test/love-test` and `personality-test/functional-freeze` have suddenly entered the top 5 tests, indicating new user interest or recent promotion.
+*   **App Anonymous Activity:** `Healo App (Anonymous) users who tried/completed sign up` appeared today (2 users), previously at 0, suggesting nascent anonymous app usage.
+
+🟢 **Core Funnel Baselines**
+
+*   `Unique User Count` (57 vs. 53 avg) and `Number of returning users` (18 vs. 20 avg) remain relatively stable, indicating a consistent user base.
+*   `Avg number of messages sent per user (Median)` slightly increased (3 vs. 2 avg), suggesting deeper engagement from the smaller pool of active chat users.
+
+🔍 **Recommended PM Investigation & Action Plan**
+
+1.  **Investigate SEO Traffic Drop (P0):**
+    *   **Action:** Immediately check Google Search Console for `Search Results` (position, CTR changes for top keywords), `Page Indexing` (crawl errors, 404s, 5xx), and `Core Web Vitals` for the test pages.
+    *   **Hotjar:** Not directly applicable, but monitor overall traffic trends.
+2.  **Diagnose Premium Test Funnel (P0):**
+    *   **Action:** Engage engineering to verify `Users shown the Premium Test popup` event tracking.
+    *   **Hotjar:** Set up recordings for users who trigger the 'Pay Now' click (event trigger: `premium_pay_now_clicked`) and analyze their journey, specifically looking for how they reached that point without the popup. Also, target users on their 2nd+ attempt of a premium test to confirm if the popup *should* be appearing.
+3.  **Address Chat Engagement Discrepancy (P1):**
+    *   **Action:** Review the `Total conversations created` event definition. Is it firing too early?
+    *   **Hotjar:** Set up recordings for users who trigger `conversation_created` but do not send a message within 30 seconds (event trigger: `conversation_created` AND `message_sent` = 0 within 30s). Look for UI friction or confusing first prompts.
+4.  **Investigate Homepage Time Anomaly (P1):**
+    *   **Action:** Verify `time spent on Home` tracking implementation.
+    *   **Hotjar:** Set up recordings for `Unique Home users` with `time_on_page` > 5 minutes to understand their behavior and identify potential tracking issues or unusual usage patterns.
+5.  **Clarify Login & Signup Metrics (P1):**
+    *   **Action:** Work with data engineering to reconcile the conflicting login completion metrics (`Total users who completed sign in` vs. `Total Users who completed sign in / Log in`).
+    *   **Hotjar:** Set up recordings for users who `tried sign up` but did not `complete verified sign up` (event trigger) to identify friction points in the verification flow.
+6.  **Analyze New Entrant Tests (P2):**
+    *   **Action:** Review `personality-test/love-test` and `personality-test/functional-freeze` for potential promotion or new content driving traffic. Monitor their completion rates closely.
+2026-08-06 15:10:43,251 - INFO - 5. Sending automated email notification...
+2026-08-06 15:10:49,911 - INFO - ✅ Email sent successfully for 2026-08-05
+2026-08-06 15:10:49,911 - INFO - ============================================================
+2026-08-06 15:10:49,911 - INFO - ✅ Daily digest pipeline completed successfully!
+2026-08-06 15:10:49,911 - INFO - ============================================================
